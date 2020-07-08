@@ -12,5 +12,5 @@ export default {
 }
 </script>
 <style lang="less">
-@import './assets/css/mixins.less'
+@import './assets/css/mixins.less';
 </style>

@@ -2,12 +2,10 @@
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin: .7em;
   background-color: @hexbgcolor;
   position:relative;
   width: @width;
   height: (@height /2);
-  margin: 3em 1em;
   &:before,
   &:after {
     content: "";
@@ -30,8 +28,8 @@
     color: @hexcolor;
     font-weight: bold;
     position: absolute;
-    z-index: 20;
-    top: 0;
+    z-index: 30;
+    top: -3px;
     left: (@width /3.3);
   }
 }
