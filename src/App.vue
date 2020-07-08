@@ -1,8 +1,5 @@
 <template>
   <div id="app">
-    <div class="logo">
-       <div class="logo__symbol">D</div>
-    </div>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -13,10 +10,6 @@
 
 <style lang="less">
 @import './assets/css/mixins.less';
-
-.logo {
-  .hexogonlogo(#fc635e, #0c252d, 59px, 68px);
-}
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
