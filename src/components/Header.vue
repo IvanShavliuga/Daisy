@@ -24,6 +24,14 @@
           <span class="header__block-firstword">Clients</span>
           in your business
         </h1>
+        <h2 class="header__block-subtitle">
+          Your clients on the internet. Learn how to receive them.
+        </h2>
+        <div class="header__block-center">
+          <button class="header__block-button">
+            I want clients
+          </button>
+        </div>
       </div>
     </div>
   </section>
@@ -90,7 +98,6 @@ export default {
   &__block {
     height: 40vh;
     padding: 11% 15%;
-    border:1px solid red;
     &-title {
       color: @headercolor;
       font-size: 51px;
@@ -99,9 +106,55 @@ export default {
       font-family: "P FEncore Sans Pro";
       text-transform: uppercase;
       word-spacing: 10px;
+      position: relative;
+      margin-bottom: 10px;
+      &:after, &:before {
+        content: ' ';
+        position: absolute;
+        display: block;
+        width: 107px;
+        height: 1px;
+        background-color: #444;
+        border: 4px solid #444;
+      }
+      &:after {
+        top: 10px;
+        left: -140px;
+      }
+      &:before {
+        top: 10px;
+        right: -120px;
+      }
     }
     &-firstword {
       color: @headerfirstword;
+    }
+    &-subtitle {
+      font-size: 24px;
+      letter-spacing: 0px;
+      line-height: 26px;
+      color: @headercolor;
+      font-family: "P FEncore Sans Pro";
+      text-align: center;
+      margin-top: 20px;
+    }
+    &-button {
+      font-size: 24px;
+      letter-spacing: 0px;
+      line-height: 26px;
+      color: @itemactive;
+      font-weight: 300;
+      font-family: "P FEncore Sans Pro";
+      text-align: center;
+      background: transparent;
+      border: 2px solid @itemactive;
+      width: 205px;
+      height: 56px;
+      border-radius: 7px;
+    }
+    &-center {
+      margin-top: 40px;
+      text-align: center;
     }
   }
 }
