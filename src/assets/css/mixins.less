@@ -166,13 +166,13 @@
     }
   }
 }
-.hexogontext(@selcolor, @defcolor, @width, @height) {
+.hexogontext(@defcolor, @width, @height) {
   div:nth-child(2) {
     position: relative;
     display: block;
     vertical-align: middle;
     border-left: 1px solid  @defcolor;
-    border-right: 1px solid  @selcolor;
+    border-right: 1px solid  @defcolor;
     position:relative;
     width: @width;
     height: (@height /2);
@@ -195,7 +195,7 @@
       span {
         font-weight: bold;
         font-size: 26px;
-        color: @selcolor;
+        color: @itemactive;
         font-family: 'Courier';
       }
     }
@@ -229,7 +229,7 @@
       width: @height / 2;
       height: 1px;
       border: none;
-      background: @selcolor;
+      background: @defcolor;
       transform: rotateZ(-30deg);
     }
     &:before {
@@ -240,7 +240,7 @@
       width: @height / 2;
       height: 1px;
       border: none;
-      background-color: @selcolor;
+      background-color: @defcolor;
       transform: rotateZ(30deg);
     }
   }

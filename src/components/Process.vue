@@ -95,29 +95,91 @@ export default {
   }
   &__step1, &__step2, &__step3 {
     position: absolute;
-    .hexogontext(@itemactive, @paragraphcolor, 174px, 201px);
+    .hexogontext(@paragraphcolor, 174px, 201px);
   }
   &__step1 {
     left: 5px;
     top: 102px;
     z-index: 20;
+    div:nth-child(2) {
+      border-right: none;
+    }
+    div:first-child:after, div:first-child:before {
+      height: 4px;
+      background-color: @stepsline;
+      width: 201px / 2 ;
+    }
+    div:nth-child(2):before {
+      content: ' ';
+      position: absolute;
+      top: 47px;
+      left: 123px;
+      background-color: @stepsline;
+      width: 97px;
+      height: 4px;
+      z-index: 30;
+      transform: rotateZ(90deg);
+    }
   }
   &__step2 {
     left: 260px;
     top: 147px;
     z-index: 20;
+    div:nth-child(2):after {
+      content: ' ';
+      position: absolute;
+      top: 49px;
+      left: -51px;
+      background-color: @stepsline;
+      width: 101px;
+      height: 4px;
+      z-index: 30;
+      transform: rotateZ(90deg);
+    }
+    div:first-child:after {
+      height: 4px;
+      background-color: @stepsline;
+      width: 208px / 2 ;
+    }
   }
   &__step3 {
     left: 348px;
     top: -3px;
     z-index: 20;
+    div:first-child:after, div:first-child:before {
+      height: 4px;
+      background-color: @stepsline;
+      width: 201px / 2 ;
+    }
+    div:nth-child(2):after {
+      content: ' ';
+      position: absolute;
+      top: 49px;
+      left: -51px;
+      background-color: @stepsline;
+      width: 104px;
+      height: 4px;
+      z-index: 30;
+      transform: rotateZ(90deg);
+    }
   }
   &__photo {
     position: absolute;
-    top: 241px;
-    left: 49px;
+    top: 239px;
+    left: 47px;
     background-image: url('../assets/images/steps.png');
     .hexogonimage(white, 262px, 302px);
+    &:after {
+      content: ' ';
+      position: absolute;
+      top: 31px;
+      left: 125px;
+      background-color: @stepsline;
+      width: 94px;
+      height: 4px;
+      z-index: 30;
+      transform: rotateZ(30.3deg);
+    }
   }
 }
 </style>
