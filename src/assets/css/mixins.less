@@ -166,6 +166,109 @@
     }
   }
 }
+.hexogontext(@selcolor, @defcolor, @width, @height) {
+  div:nth-child(2) {
+    position: relative;
+    display: block;
+    vertical-align: middle;
+    border-left: 1px solid  @defcolor;
+    border-right: 1px solid  @selcolor;
+    position:relative;
+    width: @width;
+    height: (@height /2);
+    text-align: center;
+    h4 {
+      position: absolute;
+      padding: 0;
+      font-size: 24px;
+      letter-spacing: 0px;
+      color: @bodycolor;
+      font-weight: 500;
+      font-family: @bodyfont;
+      text-align: center;
+      text-transform: uppercase;
+      width: 80px;
+      top: -50px;
+      left: 45px;
+      padding-bottom: 1px;
+      border-bottom: 2px solid @defcolor;
+      span {
+        font-weight: bold;
+        font-size: 26px;
+        color: @selcolor;
+        font-family: 'Courier';
+      }
+    }
+    p {
+      position: absolute;
+      width: 142px;
+      height: 55px;
+      font-size: 15px;
+      letter-spacing: 0px;
+      line-height: 17px;
+      color: @defcolor;
+      font-weight: 300;
+      font-family: @bodyfont;
+      top: 15px;
+      left: 10px;
+    }
+  }
+  div:first-child,
+  div:last-child {
+    display: block;
+    position: relative;
+    width: @width;
+    height: (@height /4);
+  }
+  div:first-child {
+    &:after {
+      top: @height / 9 + 2px;
+      left: -6px;
+      content: ' ';
+      position: absolute;
+      width: @height / 2;
+      height: 1px;
+      border: none;
+      background: @selcolor;
+      transform: rotateZ(-30deg);
+    }
+    &:before {
+      top: @height / 9  + 2px;
+      right: -6px;
+      content: ' ';
+      position: absolute;
+      width: @height / 2;
+      height: 1px;
+      border: none;
+      background-color: @selcolor;
+      transform: rotateZ(30deg);
+    }
+  }
+  div:last-child {
+    &:after {
+      bottom: @height / 9  + 2px;
+      left: -6px;
+      content: ' ';
+      position: absolute;
+      width: @height / 2;
+      height: 1px;
+      border: none;
+      background: @defcolor;
+      transform: rotateZ(30deg);
+    }
+    &:before {
+      bottom: @height / 9  + 2px;
+      right: -6px;
+      content: ' ';
+      position: absolute;
+      width: @height / 2;
+      height: 1px;
+      border: none;
+      background-color: @defcolor;
+      transform: rotateZ(-30deg);
+    }
+  }
+}
 .buttontransparent {
   font-size: 24px;
   letter-spacing: 0px;
