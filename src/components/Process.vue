@@ -1,6 +1,5 @@
 <template>
   <section class="process">
-    <div class="wrapper">
       <h2 class="process__title">
         Our
         <span class="process__title-lastword">process</span>
@@ -46,7 +45,6 @@
           <div></div>
         </div>
       </div>
-    </div>
   </section>
 </template>
 <script>
@@ -92,6 +90,7 @@ export default {
   }
   &__steps {
     position: relative;
+    margin: 30px 15px;
   }
   &__step1, &__step2, &__step3 {
     position: absolute;
