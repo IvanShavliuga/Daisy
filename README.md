@@ -1,4 +1,9 @@
 # daisy
+Daisy. Template web-studio.
+PSD maket:
+```
+./psd/Daisy.psd
+```
 
 ## Project setup
 ```
