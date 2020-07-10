@@ -140,18 +140,7 @@ export default {
       margin-top: 20px;
     }
     &-button {
-      font-size: 24px;
-      letter-spacing: 0px;
-      line-height: 26px;
-      color: @itemactive;
-      font-weight: 300;
-      font-family: @bodyfont;
-      text-align: center;
-      background: transparent;
-      border: 2px solid @itemactive;
-      width: 205px;
-      height: 56px;
-      border-radius: 7px;
+      .buttontransparent();
     }
     &-center {
       margin-top: 40px;
