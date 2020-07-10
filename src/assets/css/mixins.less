@@ -33,3 +33,32 @@
     left: (@width /3.3);
   }
 }
+.hexogonimage(@hexbgcolor, @width, @height) {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: @hexbgcolor;
+  position:relative;
+  width: @width;
+  height: (@height /2);
+  //border-left: 4px solid lighten(@hexbgcolor, 20%);
+  //border-right: 4px solid lighten(@hexbgcolor, 20%);
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-style: solid;
+    border-color: @hexbgcolor transparent;
+  }
+  &:before {
+    //border-top: 4px solid lighten(@hexbgcolor, 20%);
+    top: -(@height / 4);
+    border-width: 0 (@width /2) (@height / 4);
+  }
+  &:after {
+    //border-bottom: 4px solid lighten(@hexbgcolor, 20%);
+    bottom: -(@height / 4);
+    border-width: (@height / 4) (@width /2) 0 ;
+  }
+}
