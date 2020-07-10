@@ -14,36 +14,61 @@
           <li class="receive__block-item">
             <div class="receive__block-hexogon">
               <img class="receive__block-image" src="../assets/images/brand1.svg">
-              <h4 class="receive__block-title">clients</h4>
-              <p class="receive__block-desc">Daisy is sagittis sem nibh id elit. Duis sed odio sit amet nibh</p>
+              <div class="receive__block-border">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
             </div>
+            <h4 class="receive__block-title">clients</h4>
+            <p class="receive__block-desc">Daisy is sagittis sem nibh id elit. Duis sed odio sit amet nibh</p>
           </li>
           <li class="receive__block-item">
             <div class="receive__block-hexogon">
               <img class="receive__block-image" src="../assets/images/brand2.svg">
-              <h4 class="receive__block-title">brands</h4>
-              <p class="receive__block-desc">Daisy is sagittis sem nibh id elit. Duis sed odio sit amet nibh</p>
+              <div class="receive__block-border">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
             </div>
+            <h4 class="receive__block-title">brands</h4>
+            <p class="receive__block-desc">Daisy is sagittis sem nibh id elit. Duis sed odio sit amet nibh</p>
           </li>
           <li class="receive__block-item">
             <div class="receive__block-hexogon">
               <img class="receive__block-image" src="../assets/images/brand3.svg">
-              <h4 class="receive__block-title">marketing</h4>
-              <p class="receive__block-desc">Daisy is sagittis sem nibh id elit. Duis sed odio sit amet nibh</p>
+              <div class="receive__block-border">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
             </div>
+            <h4 class="receive__block-title">marketing</h4>
+            <p class="receive__block-desc">Daisy is sagittis sem nibh id elit. Duis sed odio sit amet nibh</p>
           </li>
           <li class="receive__block-item">
             <div class="receive__block-hexogon">
               <img class="receive__block-image" src="../assets/images/brand4.svg">
-              <h4 class="receive__block-title">adv.</h4>
-              <p class="receive__block-desc">Daisy is sagittis sem nibh id elit. Duis sed odio sit amet nibh</p>
+              <div class="receive__block-border">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
             </div>
+            <h4 class="receive__block-title">adv.</h4>
+            <p class="receive__block-desc">Daisy is sagittis sem nibh id elit. Duis sed odio sit amet nibh</p>
           </li>
         </ul>
       </div>
     </div>
   </section>
 </template>
+<script>
+export default {
+  name: 'Receive'
+}
+</script>
 <style lang="less">
 .receive {
   width: 100%;
@@ -75,7 +100,7 @@
     line-height: 26px;
     color: @paragraphcolor;
     font-weight: 300;
-    font-family: "P FEncore Sans Pro";
+    font-family: @bodyfont;
     text-align: center;
     width: 490px;
     margin: 20px auto;
@@ -93,8 +118,15 @@
       text-align: center;
     }
     &-hexogon {
-      .hexogonimage(@itemactive, 100px, 116px);
+      .hexogonicon(@itemactive, 100px, 116px);
       text-align: center;
+    }
+    &-border {
+      z-index: 20;
+      position: absolute;
+      top: -30px;
+      left: 0;
+      .hexogonborder(lighten(@itemactive, 12%), 4px, 100px, 116px);
     }
     &-title {
       position: relative;

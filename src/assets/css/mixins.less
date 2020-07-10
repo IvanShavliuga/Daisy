@@ -33,7 +33,7 @@
     left: (@width /3.3);
   }
 }
-.hexogonimage(@hexbgcolor, @width, @height) {
+.hexogonicon(@hexbgcolor, @width, @height) {
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -60,6 +60,110 @@
     //border-bottom: 4px solid lighten(@hexbgcolor, 20%);
     bottom: -(@height / 4);
     border-width: (@height / 4) (@width /2) 0 ;
+  }
+}
+.hexogonimage(@hexbgcolor, @width, @height) {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 97% 100%;
+  width: 262px;
+  height: 302px;
+  position: relative;
+  div {
+    width: 0;
+    height: 0;
+    border-width: @width / 6 @height / 4;
+    border-style: solid;
+    border-color: transparent;
+    display: block;
+    position: absolute;
+  }
+  div:first-child {
+    top: 0;
+    left: 0;
+    border-color: @hexbgcolor transparent transparent @hexbgcolor;
+  }
+  div:nth-child(2) {
+    top:0;
+    right: 0;
+    border-color: @hexbgcolor @hexbgcolor transparent transparent;
+  }
+  div:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    border-color: transparent transparent @hexbgcolor @hexbgcolor;
+  }
+  div:last-child {
+    bottom: 0;
+    right: 0;
+    border-color: transparent @hexbgcolor @hexbgcolor transparent;
+  }
+}
+.hexogonborder(@hexbgcolor, @border, @width, @height) {
+  div:nth-child(2) {
+    position: relative;
+    display: block;
+    vertical-align: middle;
+    border-left: @border solid  @hexbgcolor;
+    border-right: @border solid  @hexbgcolor;
+    position:relative;
+    width: @width - 2 * @border;
+    height: (@height /2);
+  }
+  div:first-child,
+  div:last-child {
+    display: block;
+    position: relative;
+    width: @width;
+    height: (@height /4);
+  }
+  div:first-child {
+    &:after {
+      top: @height / 9;
+      left: -7px + @border;
+      content: ' ';
+      position: absolute;
+      width: @height / 2;
+      height: @border;
+      border: none;
+      background: @hexbgcolor;
+      transform: rotateZ(-30deg);
+    }
+    &:before {
+      top: @height / 9;
+      right: -7px + @border;
+      content: ' ';
+      position: absolute;
+      width: @height / 2;
+      height: @border;
+      border: none;
+      background-color: @hexbgcolor;
+      transform: rotateZ(30deg);
+    }
+  }
+  div:last-child {
+    &:after {
+      bottom: @height / 9;
+      left: -7px + @border;
+      content: ' ';
+      position: absolute;
+      width: @height / 2;
+      height: @border;
+      border: none;
+      background: @hexbgcolor;
+      transform: rotateZ(30deg);
+    }
+    &:before {
+      bottom: @height / 9;
+      right: -7px + @border;
+      content: ' ';
+      position: absolute;
+      width: @height / 2;
+      height: @border;
+      border: none;
+      background-color: @hexbgcolor;
+      transform: rotateZ(-30deg);
+    }
   }
 }
 .buttontransparent {
