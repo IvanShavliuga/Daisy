@@ -24,9 +24,9 @@
           <span class="header__block-firstword">Clients</span>
           in your business
         </h1>
-        <h2 class="header__block-subtitle">
+        <h3 class="header__block-subtitle">
           Your clients on the internet. Learn how to receive them.
-        </h2>
+        </h3>
         <div class="header__block-center">
           <button class="header__block-button">
             I want clients
@@ -57,6 +57,7 @@ export default {
     justify-content: space-between;
     padding-top: 50px;
     &-logo {
+      font-family: @logofont;
       .hexogonlogo(@logocolor, #0c252d, 59px, 68px);
     }
     &-brand {
@@ -65,7 +66,7 @@ export default {
       line-height: 16px;
       color: #ffffff;
       font-weight: bold;
-      font-family: "Gotham Pro";
+      font-family: @logofont;
       margin-left: 20px;
       margin-top: 10px;
     }
@@ -88,7 +89,7 @@ export default {
       font-size: 16px;
       letter-spacing: 1px;
       line-height: 36px;
-      font-family: "P FEncore Sans Pro";
+      font-family: @bodyfont;
     }
     .active {
       color: @itemactive;
@@ -103,7 +104,7 @@ export default {
       font-size: 51px;
       line-height: 36px;
       font-weight: bold;
-      font-family: "P FEncore Sans Pro";
+      font-family: @bodyfont;
       text-transform: uppercase;
       word-spacing: 10px;
       position: relative;
@@ -134,7 +135,7 @@ export default {
       letter-spacing: 0px;
       line-height: 26px;
       color: @headercolor;
-      font-family: "P FEncore Sans Pro";
+      font-family: @bodyfont;
       text-align: center;
       margin-top: 20px;
     }
@@ -144,7 +145,7 @@ export default {
       line-height: 26px;
       color: @itemactive;
       font-weight: 300;
-      font-family: "P FEncore Sans Pro";
+      font-family: @bodyfont;
       text-align: center;
       background: transparent;
       border: 2px solid @itemactive;
