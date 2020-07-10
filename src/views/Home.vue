@@ -3,6 +3,7 @@
   <Header/>
   <Receive/>
   <Expand/>
+  <Process/>
 </main>
 </template>
 <style>
@@ -16,12 +17,14 @@ main {
 import Header from '@/components/Header.vue'
 import Receive from '@/components/Receive.vue'
 import Expand from '@/components/Expand.vue'
+import Process from '@/components/Process.vue'
 export default {
   name: 'Home',
   components: {
     Header,
     Receive,
-    Expand
+    Expand,
+    Process
   }
 }
 </script>

@@ -99,6 +99,73 @@
     border-color: transparent @hexbgcolor @hexbgcolor transparent;
   }
 }
+.hexogonborder(@hexbgcolor, @border, @width, @height) {
+  div:nth-child(2) {
+    position: relative;
+    display: block;
+    vertical-align: middle;
+    border-left: @border solid  @hexbgcolor;
+    border-right: @border solid  @hexbgcolor;
+    position:relative;
+    width: @width - 2 * @border;
+    height: (@height /2);
+  }
+  div:first-child,
+  div:last-child {
+    display: block;
+    position: relative;
+    width: @width;
+    height: (@height /4);
+  }
+  div:first-child {
+    &:after {
+      top: @height / 9;
+      left: -7px + @border;
+      content: ' ';
+      position: absolute;
+      width: @height / 2;
+      height: @border;
+      border: none;
+      background: @hexbgcolor;
+      transform: rotateZ(-30deg);
+    }
+    &:before {
+      top: @height / 9;
+      right: -7px + @border;
+      content: ' ';
+      position: absolute;
+      width: @height / 2;
+      height: @border;
+      border: none;
+      background-color: @hexbgcolor;
+      transform: rotateZ(30deg);
+    }
+  }
+  div:last-child {
+    &:after {
+      bottom: @height / 9;
+      left: -7px + @border;
+      content: ' ';
+      position: absolute;
+      width: @height / 2;
+      height: @border;
+      border: none;
+      background: @hexbgcolor;
+      transform: rotateZ(30deg);
+    }
+    &:before {
+      bottom: @height / 9;
+      right: -7px + @border;
+      content: ' ';
+      position: absolute;
+      width: @height / 2;
+      height: @border;
+      border: none;
+      background-color: @hexbgcolor;
+      transform: rotateZ(-30deg);
+    }
+  }
+}
 .buttontransparent {
   font-size: 24px;
   letter-spacing: 0px;
