@@ -283,3 +283,94 @@
   height: 56px;
   border-radius: 7px;
 }
+
+.headersection {
+  &__title {
+    width: 353px;
+    margin: 0 auto;
+    font-size: 28px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: @bodycolor;
+    font-weight: 500;
+    font-family: @bodyfont;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #adadad;
+    &-lastword {
+      color: @itemactive;
+    }
+  }
+  &__subtitle {
+    font-family: @bodyfont;
+    height: 51px;
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    color: @paragraphcolor;
+    font-weight: 300;
+    font-family: @bodyfont;
+    text-align: center;
+    width: 490px;
+    margin: 20px auto;
+  }
+}
+
+.textleftsection {
+  &__text {
+    width: 40%;
+    padding: 55px 10px;
+    position: relative;
+    &-title {
+      position: relative;
+      font-size: 28px;
+      letter-spacing: 0px;
+      line-height: 26px;
+      color: @bodycolor;
+      font-weight: 500;
+      font-family: @bodyfont;
+      text-align: left;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      margin-top: 10px;
+      &:before {
+        content: ' ';
+        position: absolute;
+        left: -20px;
+        top: -5px;
+        width: 10px;
+        height: 39px;
+        background-color: @itemactive;
+      }
+    }
+    &-desc {
+      position: static;
+      font-family: @bodyfont;
+      font-size: 20px;
+      letter-spacing: 0px;
+      line-height: 26px;
+      color: @paragraphcolor;
+      font-weight: 300;
+      font-family: @bodyfont;
+    }
+    &-button {
+      position: relative;
+      width: 167px;
+      height: 44px;
+      border-radius: 7px;
+      background-color: @itemactive;
+      color: #fff;
+      border: none;
+      font-size: 20px;
+      letter-spacing: 0px;
+      line-height: 26px;
+      color: @bodygraybg;
+      font-weight: 300;
+      font-family: @bodyfont;
+      text-align: center;
+      margin-top: 15px; 
+    }
+  }
+}
