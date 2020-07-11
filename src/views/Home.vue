@@ -4,6 +4,7 @@
   <Receive/>
   <Expand/>
   <Process/>
+  <Landing/>
 </main>
 </template>
 <style>
@@ -18,13 +19,15 @@ import Header from '@/components/Header.vue'
 import Receive from '@/components/Receive.vue'
 import Expand from '@/components/Expand.vue'
 import Process from '@/components/Process.vue'
+import Landing from '@/components/Landing.vue'
 export default {
   name: 'Home',
   components: {
     Header,
     Receive,
     Expand,
-    Process
+    Process,
+    Landing
   }
 }
 </script>

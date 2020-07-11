@@ -5,7 +5,7 @@
         Our
         <span class="process__title-lastword">process</span>
       </h2>
-      <p class="process__desc">Daisy is sagittis sem nibh id elit. Duis sed odio sit amet nibh
+      <p class="process__subtitle">Daisy is sagittis sem nibh id elit. Duis sed odio sit amet nibh
         Daisy is sagittis sem nibh id elit. Duis sed odio sit amet nibh
       </p>
       <div class="process__steps">
@@ -82,38 +82,13 @@ export default {
 <style lang="less">
 .process {
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   margin: 0;
   padding-top: 40px;
+  .headersection();
   &__title {
     width: 190px;
     margin: 0 auto;
-    font-size: 28px;
-    letter-spacing: 0px;
-    line-height: 26px;
-    color: @bodycolor;
-    font-weight: 500;
-    font-family: @bodyfont;
-    text-align: center;
-    text-transform: uppercase;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #adadad;
-    &-lastword {
-      color: @itemactive;
-    }
-  }
-  &__desc {
-    font-family: @bodyfont;
-    height: 51px;
-    font-size: 20px;
-    letter-spacing: 0px;
-    line-height: 26px;
-    color: @paragraphcolor;
-    font-weight: 300;
-    font-family: @bodyfont;
-    text-align: center;
-    width: 490px;
-    margin: 20px auto;
   }
   &__steps {
     position: relative;
