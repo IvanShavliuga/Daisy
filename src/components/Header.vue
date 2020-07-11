@@ -118,11 +118,11 @@ export default {
         border: 4px solid #444;
       }
       &:after {
-        top: 10px;
+        top: 25px;
         left: -140px;
       }
       &:before {
-        top: 10px;
+        top: 25px;
         right: -120px;
       }
     }

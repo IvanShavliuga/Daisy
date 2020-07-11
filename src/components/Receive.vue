@@ -75,35 +75,10 @@ export default {
   height: 80vh;
   margin: 0;
   padding-top: 40px;
+  .headersection();
   &__title {
-    width: 353px;
+    width: 360px;
     margin: 0 auto;
-    font-size: 28px;
-    letter-spacing: 0px;
-    line-height: 26px;
-    color: @bodycolor;
-    font-weight: 500;
-    font-family: @bodyfont;
-    text-align: center;
-    text-transform: uppercase;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #adadad;
-    &-lastword {
-      color: @itemactive;
-    }
-  }
-  &__subtitle {
-    font-family: @bodyfont;
-    height: 51px;
-    font-size: 20px;
-    letter-spacing: 0px;
-    line-height: 26px;
-    color: @paragraphcolor;
-    font-weight: 300;
-    font-family: @bodyfont;
-    text-align: center;
-    width: 490px;
-    margin: 20px auto;
   }
   &__block {
     margin-top: 100px;
