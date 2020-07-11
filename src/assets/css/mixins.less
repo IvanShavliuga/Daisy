@@ -284,13 +284,6 @@
   border-radius: 7px;
 }
 
-.buttonred {
-  width: 167px;
-  height: 44px;
-  border-radius: 7px;
-  background-color: @itemactive;
-}
-
 .headersection {
   &__title {
     width: 353px;
@@ -328,6 +321,7 @@
   &__text {
     width: 40%;
     padding: 55px 10px;
+    position: relative;
     &-title {
       position: relative;
       font-size: 28px;
@@ -352,14 +346,31 @@
       }
     }
     &-desc {
+      position: static;
       font-family: @bodyfont;
-      height: 51px;
       font-size: 20px;
       letter-spacing: 0px;
       line-height: 26px;
       color: @paragraphcolor;
       font-weight: 300;
       font-family: @bodyfont;
+    }
+    &-button {
+      position: relative;
+      width: 167px;
+      height: 44px;
+      border-radius: 7px;
+      background-color: @itemactive;
+      color: #fff;
+      border: none;
+      font-size: 20px;
+      letter-spacing: 0px;
+      line-height: 26px;
+      color: @bodygraybg;
+      font-weight: 300;
+      font-family: @bodyfont;
+      text-align: center;
+      margin-top: 15px; 
     }
   }
 }
