@@ -1,5 +1,6 @@
 <template>
   <section class="process">
+    <div class="wrapper">
       <h2 class="process__title">
         Our
         <span class="process__title-lastword">process</span>
@@ -15,6 +16,9 @@
               <span>1</span>
             </h4>
             <p>This is Photoshop's version  of loren ipsumm. Proin</p>
+            <i class="process__steps-img">
+              <img class="process__step1-img" src="../assets/images/step1.svg">
+            </i>
           </div>
           <div></div>
         </div>
@@ -25,6 +29,9 @@
               <span>2</span>
             </h4>
             <p>This is Photoshop's version  of loren ipsumm. Proin</p>
+            <i class="process__steps-img">
+              <img class="process__step2-img" src="../assets/images/step2.svg">
+            </i>
           </div>
           <div></div>
         </div>
@@ -35,6 +42,25 @@
               <span>3</span>
             </h4>
             <p>This is Photoshop's version  of loren ipsumm. Proin</p>
+            <i class="process__steps-img">
+              <img class="process__step3-img" src="../assets/images/step3.svg">
+            </i>
+          </div>
+          <div></div>
+        </div>
+        <div class="process__step4">
+          <div></div>
+          <div>
+            <h4>Step
+              <span>4</span>
+            </h4>
+            <p>This is Photoshop's version  of loren ipsumm. Proin</p>
+            <i class="process__steps-img">
+              <img class="process__step4-img" src="../assets/images/step4.svg">
+            </i>
+            <i class="process__steps-img">
+              <img class="process__step4-img" src="../assets/images/step5.svg">
+            </i>
           </div>
           <div></div>
         </div>
@@ -45,6 +71,7 @@
           <div></div>
         </div>
       </div>
+    </div>
   </section>
 </template>
 <script>
@@ -90,7 +117,19 @@ export default {
   }
   &__steps {
     position: relative;
-    margin: 30px 15px;
+    margin: 50px 0 50px 130px;
+    &-img {
+      position: absolute;
+      top: -15px;
+      left: -15px;
+      z-index: 40;
+      background-color: @stepsline;
+      border-radius: 50%;
+      width: 34px;
+      height: 32px;
+      display: block;
+      padding-top: 4px;
+    }
   }
   &__step1, &__step2, &__step3 {
     position: absolute;
@@ -98,10 +137,13 @@ export default {
   }
   &__step1 {
     left: 5px;
-    top: 102px;
+    top: 101px;
     z-index: 20;
     div:nth-child(2) {
       border-right: none;
+    }
+    div:last-child:before {
+      display: none;
     }
     div:first-child:after, div:first-child:before {
       height: 4px;
@@ -124,6 +166,10 @@ export default {
     left: 260px;
     top: 147px;
     z-index: 20;
+    i {
+      padding-top: 8px;
+      height: 28px;
+    }
     div:nth-child(2):after {
       content: ' ';
       position: absolute;
@@ -160,6 +206,76 @@ export default {
       height: 4px;
       z-index: 30;
       transform: rotateZ(90deg);
+    }
+    div:nth-child(2):before {
+      content: ' ';
+      position: absolute;
+      top: 50px;
+      right: -51px;
+      background-color: @stepsline;
+      width: 103px;
+      height: 4px;
+      z-index: 30;
+      transform: rotateZ(90deg);
+    }
+  }
+  &__step4 {
+    position: absolute;
+    .hexogontext(@paragraphcolor, 262px, 302px);
+    right: 162px;
+    top: 70px;
+    i:last-child {
+      top: 200px;
+      left: 110px;
+      padding-top: 6px;
+      height: 28px;
+      background-color: white;
+      border: 3px solid @stepsline;
+    }
+    div:first-child:after, div:first-child:before {
+      height: 4px;
+      background-color: @stepsline;
+      width: 262px / 1.7;
+    }
+    div:first-child:after {
+      top: 302px / 9 + 3px;
+      left: -11px;
+    }
+    div:first-child:before {
+      top: 302px / 9  + 3px;
+      right: -11px;
+    }
+    div:nth-child(2) {
+      h4 {
+        top: -55px;
+        left: 95px;
+      }
+      p {
+        top: 10px;
+        left: 60px;
+      }
+    }
+    div:nth-child(2):before {
+      content: ' ';
+      position: absolute;
+      top: 75px;
+      right: -75px;
+      background-color: @stepsline;
+      width: 151px;
+      height: 4px;
+      z-index: 30;
+      transform: rotateZ(90deg);
+    }
+    div:last-child:after {
+      top: 302px / 9 + 4px;
+      left: -10px;
+    }
+    div:last-child:before {
+      top: 302px / 9  + 4px;
+      right: -10px;
+      background-color: @stepsline;
+      height: 4px;
+      z-index: 30;
     }
   }
   &__photo {

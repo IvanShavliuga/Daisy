@@ -55,20 +55,20 @@ export default {
   &__topline {
     display: flex;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 45px;
     &-logo {
       font-family: @logofont;
-      .hexogonlogo(@logocolor, #0c252d, 59px, 68px);
+      .hexogonlogo(@logocolor, #0c252d, 59px , 68px);
     }
     &-brand {
-      font-size: 25px;
+      font-size: 35px;
       letter-spacing: 0px;
       line-height: 16px;
       color: #ffffff;
       font-weight: bold;
       font-family: @logofont;
       margin-left: 20px;
-      margin-top: 10px;
+      margin-top: 15px;
     }
     &-leftblock {
       display: flex;
@@ -84,7 +84,7 @@ export default {
     &-item {
       list-style: none;
       text-transform: uppercase;
-      margin: -15px 45px 0 0;
+      margin: -15px 25px 0 0;
       color: #fff;
       font-size: 16px;
       letter-spacing: 1px;
@@ -102,7 +102,6 @@ export default {
     &-title {
       color: @headercolor;
       font-size: 51px;
-      line-height: 36px;
       font-weight: bold;
       font-family: @bodyfont;
       text-transform: uppercase;
