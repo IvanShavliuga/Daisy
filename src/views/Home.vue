@@ -6,6 +6,7 @@
   <Process/>
   <Landing/>
   <Advertising/>
+  <Marketing/>
 </main>
 </template>
 <style>
@@ -22,6 +23,7 @@ import Expand from '@/components/Expand.vue'
 import Process from '@/components/Process.vue'
 import Landing from '@/components/Landing.vue'
 import Advertising from '@/components/Advertising.vue'
+import Marketing from '@/components/Marketing.vue'
 export default {
   name: 'Home',
   components: {
@@ -30,7 +32,8 @@ export default {
     Expand,
     Process,
     Landing,
-    Advertising
+    Advertising,
+    Marketing
   }
 }
 </script>
