@@ -27,7 +27,7 @@
 </template>
 <script>
 export default {
-  name: 'Process'
+  name: 'Landing'
 }
 </script>
 <style lang="less">
