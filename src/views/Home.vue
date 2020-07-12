@@ -5,6 +5,8 @@
   <Expand/>
   <Process/>
   <Landing/>
+  <Advertising/>
+  <Marketing/>
 </main>
 </template>
 <style>
@@ -20,6 +22,8 @@ import Receive from '@/components/Receive.vue'
 import Expand from '@/components/Expand.vue'
 import Process from '@/components/Process.vue'
 import Landing from '@/components/Landing.vue'
+import Advertising from '@/components/Advertising.vue'
+import Marketing from '@/components/Marketing.vue'
 export default {
   name: 'Home',
   components: {
@@ -27,7 +31,9 @@ export default {
     Receive,
     Expand,
     Process,
-    Landing
+    Landing,
+    Advertising,
+    Marketing
   }
 }
 </script>
