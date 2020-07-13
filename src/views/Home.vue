@@ -7,6 +7,7 @@
   <Landing/>
   <Advertising/>
   <Marketing/>
+  <Portfolio/>
 </main>
 </template>
 <style>
@@ -24,6 +25,7 @@ import Process from '@/components/Process.vue'
 import Landing from '@/components/Landing.vue'
 import Advertising from '@/components/Advertising.vue'
 import Marketing from '@/components/Marketing.vue'
+import Portfolio from '@/components/Portfolio.vue'
 export default {
   name: 'Home',
   components: {
@@ -33,7 +35,8 @@ export default {
     Process,
     Landing,
     Advertising,
-    Marketing
+    Marketing,
+    Portfolio
   }
 }
 </script>
