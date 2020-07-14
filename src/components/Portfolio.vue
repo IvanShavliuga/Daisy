@@ -99,6 +99,7 @@
         <h4 class="portfolio__block-title">
           portfolio #{{k+1}}
         </h4>
+        <button class="portfolio__block-button">+</button>
       </div>
       <img class="portfolio__block-img"
         :src="p"
@@ -133,11 +134,10 @@ export default {
   width: 100% -40px;
   height: 100% -160px;
   margin: 0;
-  padding: 80px 20px 80px 20px;
+  padding: 40px 20px 80px 20px;
   .headersection();
   &__title {
     width: 165px;
-    margin: 0 auto;
   }
   &__menu {
     border-top: 1px solid @bodycolor;
@@ -202,9 +202,8 @@ export default {
       top: 0;
       width: 245px;
       height: 212px;
-      background-color: @itemactive;
+      background-color: rgba(@itemactive, 0.6);
       color: white;
-      opacity: 0.6;
       z-index: 20;
       font-size: 28px;
       letter-spacing: 0px;
@@ -215,6 +214,30 @@ export default {
     &-img {
       width: 245px;
       height: 212px;
+    }
+    &-title {
+      margin: 20px;
+      font-size: 28px;
+      letter-spacing: 0px;
+      line-height: 26px;
+      color: #ffffff;
+      font-weight: bold;
+      font-family: @bodyfont;
+    }
+    &-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: transparent;
+      color: white;
+      border: none;
+      font-size: 105px / 1.5;
+      letter-spacing: -1px;
+      line-height: 136px;
+      color: #ffffff;
+      font-weight: bold;
+      font-family: @bodyfont;
     }
   }
   &__button {
