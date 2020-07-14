@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="landing__block">
         <div class="landing__text">
-          <h3 class="landing__text-title">Landing page
+          <h3 class="landing__text-title">Marketing
           </h3>
           <p class="landing__text-desc">Daisy is sagittis sem nibh id elit. Duis sed odio sit amet nibh
             Daisy is sagittis sem nibh id elit. Duis sed odio sit amet nibh
