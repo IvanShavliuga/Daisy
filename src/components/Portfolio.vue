@@ -14,8 +14,11 @@
       </ul>
     </nav>
     <ul class="portfolio__block">
-      <li class="portfolio__block-item">
-        <div class="portfolio__block-hover">
+      <!--<li class="portfolio__block-item">
+        <div class="portfolio__block-hover"
+          v-show="(showid==true)&&(id==0)"
+          v-on:mouseleave="showid=false; id=-1"
+          >
           <h4 class="portfolio__block-title">
             portfolio #1
           </h4>
@@ -24,10 +27,13 @@
           class="portfolio__block-img"
           src="../assets/images/portfolio_1.png"
           alt="Portfolio #1"
+          v-on:mouseover="showid=true; id=0"
         >
       </li>
       <li class="portfolio__block-item">
-        <div class="portfolio__block-hover">
+        <div class="portfolio__block-hover"
+          v-show="(showid==true)&&(id==1)"
+          v-on:mouseleave="showid=false; id=-1">
           <h4 class="portfolio__block-title">
             portfolio #2
           </h4>
@@ -35,7 +41,8 @@
         <img
           class="portfolio__block-img"
           src="../assets/images/portfolio_2.png"
-          alt="Portfolio #2">
+          alt="Portfolio #2"
+          v-on:mouseover="showid=true; id=1">
       </li>
       <li class="portfolio__block-item">
         <div class="portfolio__block-hover">
@@ -80,31 +87,43 @@
           class="portfolio__block-img"
           src="../assets/images/portfolio_6.png"
           alt="Portfolio #6">
-      </li>
-      <!--<li v-for="(i,k) in [1,2,3,4,5,6]"
-        :key="k"
-      >
-        <img
-          class="portfolio__block-img"
-         :src="'../assets/images/portfolio_'+i+'.png'"
-         alt="Portfolio #6">
       </li>-->
+    <li class="portfolio__block-item"
+        v-for="(p,k) in pictures"
+        :key="k"
+    >
+      <div class="portfolio__block-hover"
+        v-show="(showid==true)&&(id==k)"
+        v-on:mouseleave="showid=false; id=-1"
+        >
+        <h4 class="portfolio__block-title">
+          portfolio #{{k+1}}
+        </h4>
+      </div>
+      <img class="portfolio__block-img"
+        :src="p"
+        :alt="'Portfolio #'+(k+1)"
+        v-on:mouseover="showid=true; id=k">
+      </li>
     </ul>
     <button class="portfolio__button">I want landing page</button>
   </div>
 </section>
 </template>
 <script>
+import img1 from '../assets/images/portfolio_1.png'
+import img2 from '../assets/images/portfolio_2.png'
+import img3 from '../assets/images/portfolio_3.png'
+import img4 from '../assets/images/portfolio_4.png'
+import img5 from '../assets/images/portfolio_5.png'
+import img6 from '../assets/images/portfolio_6.png'
 export default {
   name: 'Portfolio',
   data () {
     return {
-      showelement: [false, false, false, false, false, false]
-    }
-  },
-  methods: {
-    showphoto (id, enter) {
-      this.showelement[id] = enter
+      showid: false,
+      id: -1,
+      pictures: [img1, img2, img3, img4, img5, img6]
     }
   }
 }
@@ -185,7 +204,7 @@ export default {
       height: 212px;
       background-color: @itemactive;
       color: white;
-      opacity: 0.8;
+      opacity: 0.6;
       z-index: 20;
       font-size: 28px;
       letter-spacing: 0px;
