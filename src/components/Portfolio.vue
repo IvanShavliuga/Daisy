@@ -15,7 +15,11 @@
     </nav>
     <ul class="portfolio__block">
       <li class="portfolio__block-item">
-        <div class="portfolio__block-hover">
+        <!--<p>{{showelement[0]}}</p>-->
+        <div class="portfolio__block-hover"
+          v-show="showid"
+          v-on:mouseleave="showid=false"
+          >
           <h4 class="portfolio__block-title">
             portfolio #1
           </h4>
@@ -24,7 +28,11 @@
           class="portfolio__block-img"
           src="../assets/images/portfolio_1.png"
           alt="Portfolio #1"
+          v-on:mouseover="showid=true"
         >
+        <!--
+        v-on:mouseover="showphoto(0,true)"
+        v-on:mouseleave="showphoto(0,false)"-->
       </li>
       <li class="portfolio__block-item">
         <div class="portfolio__block-hover">
@@ -99,7 +107,8 @@ export default {
   name: 'Portfolio',
   data () {
     return {
-      showelement: [false, false, false, false, false, false]
+      showelement: [false, false, false, false, false, false],
+      showid: false
     }
   },
   methods: {
