@@ -9,6 +9,7 @@
   <Marketing/>
   <Portfolio/>
   <Team/>
+  <Clients/>
 </main>
 </template>
 <style>
@@ -28,6 +29,7 @@ import Advertising from '@/components/Advertising.vue'
 import Marketing from '@/components/Marketing.vue'
 import Portfolio from '@/components/Portfolio.vue'
 import Team from '@/components/Team.vue'
+import Clients from '@/components/Clients.vue'
 export default {
   name: 'Home',
   components: {
@@ -39,7 +41,8 @@ export default {
     Advertising,
     Marketing,
     Portfolio,
-    Team
+    Team,
+    Clients
   }
 }
 </script>
