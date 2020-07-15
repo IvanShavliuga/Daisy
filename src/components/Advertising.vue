@@ -6,7 +6,7 @@
           <img class="advertising__images-macbook" alt="advertising macbook" src="../assets/images/macbook2.png"/>
         </div>
         <div class="advertising__text">
-          <h3 class="advertising__text-title">Landing page
+          <h3 class="advertising__text-title">Advertising
           </h3>
           <p class="advertising__text-desc">Daisy is sagittis sem nibh id elit. Duis sed odio sit amet nibh
             Daisy is sagittis sem nibh id elit. Duis sed odio sit amet nibh
@@ -27,9 +27,10 @@ export default {
 <style lang="less">
 .advertising {
   width: 100%;
-  height: 100vh - 20px;
+  height: 90vh;
   margin: 0;
   padding-top: 40px;
+  padding-bottom: -40px;
   background-color: #fff;
   &__block {
     display: flex;
