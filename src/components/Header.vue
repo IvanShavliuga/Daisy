@@ -68,7 +68,7 @@ export default {
       font-weight: bold;
       font-family: @logofont;
       margin-left: 20px;
-      margin-top: 15px;
+      margin-top: 5px;
     }
     &-leftblock {
       display: flex;
