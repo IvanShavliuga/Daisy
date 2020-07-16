@@ -10,6 +10,7 @@
   <Portfolio/>
   <Team/>
   <Clients/>
+  <Footer/>
 </main>
 </template>
 <style>
@@ -30,6 +31,7 @@ import Marketing from '@/components/Marketing.vue'
 import Portfolio from '@/components/Portfolio.vue'
 import Team from '@/components/Team.vue'
 import Clients from '@/components/Clients.vue'
+import Footer from '@/components/Footer.vue'
 export default {
   name: 'Home',
   components: {
@@ -42,7 +44,8 @@ export default {
     Marketing,
     Portfolio,
     Team,
-    Clients
+    Clients,
+    Footer
   }
 }
 </script>
