@@ -37,9 +37,6 @@
           <button class="clients__slider-next"></button>
         </div>
       </div>
-      <div class="clients__map">
-
-      </div>
     </div>
   </section>
 </template>
@@ -173,10 +170,6 @@ export default {
       height: 31px;
       margin-left: 20px;
     }
-  }
-  &__map {
-    background-image: url(../assets/images/map.png);
-    height: 15vh;
   }
 }
 </style>
