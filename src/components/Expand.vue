@@ -18,7 +18,7 @@
   width: 100% -40px;
   height: 100% -160px;
   margin: 0;
-  background-image: url('../assets/images/expand.png');
+  background-image: url('../assets/images/expand.jpg');
   background-repeat: no-repeat;
   background-size: 100% 99.9%;
   padding: 80px 20px 80px 20px;

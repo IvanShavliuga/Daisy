@@ -102,7 +102,7 @@
   }
   &__bottom {
     position: relative;
-    background-image: url(../assets/images/footer.png);
+    background-image: url(../assets/images/footer.jpg);
     height: 208px;
     background-repeat: no-repeat;
     background-position: center center;
