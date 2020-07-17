@@ -36,6 +36,7 @@
     position: relative;
     background-image: url(../assets/images/map.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     height: 338px;
   }
   &__hexogon {

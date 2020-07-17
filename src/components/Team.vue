@@ -90,6 +90,15 @@ export default {
       position: relative;
       margin-left: 18%;
       margin-right: 18%;
+      @media screen and (min-width: 1400px) {
+        width: 153px;
+        height: 171px;
+        top: -5px;
+        position: relative;
+        margin-left: 27%;
+        padding: 0;
+        left: -12px;
+      }
       div {
         width: 0;
         height: 0;
