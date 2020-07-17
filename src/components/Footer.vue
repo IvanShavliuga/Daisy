@@ -107,20 +107,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
-    &-logo {
-      font-family: @logofont;
-      .hexogonlogo(@logocolor, #0c252d, 59px , 68px);
-    }
-    &-brand {
-      font-size: 35px;
-      letter-spacing: 0px;
-      line-height: 16px;
-      color: #ffffff;
-      font-weight: bold;
-      font-family: @logofont;
-      margin-left: 20px;
-      margin-top: 5px;
-    }
+    .logobrand();
     &-logoblock {
       display: flex;
       flex-grow: 1;

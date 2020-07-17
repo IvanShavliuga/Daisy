@@ -35,8 +35,8 @@
       font-family: @bodyfont;
       text-align: center;
       color: #fff;
+      .titlepicture();
       margin-top: 18%;
-      text-transform: uppercase;
     }
     &-firstword {
       color: @itemactive;
