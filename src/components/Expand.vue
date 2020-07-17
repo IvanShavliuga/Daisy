@@ -16,7 +16,7 @@
 <style lang="less">
 .expand {
   width: 100% -40px;
-  height: 100% -160px;
+  height: 606px;
   margin: 0;
   background-image: url('../assets/images/expand.jpg');
   background-repeat: no-repeat;

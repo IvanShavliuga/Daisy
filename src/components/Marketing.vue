@@ -27,9 +27,9 @@ export default {
 <style lang="less">
 .landing {
   width: 100%;
-  height: 90vh;
+  height: 533px;
   margin: 0;
-  padding-top: 40px;
+  padding-top: 10px;
   padding-bottom: -40px;
   background-color: @bodygraybg;
   .headersection();

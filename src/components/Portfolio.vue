@@ -58,9 +58,9 @@ export default {
 <style lang="less">
 .portfolio {
   width: 100% -40px;
-  height: 100% -160px;
+  height: 845px;
   margin: 0;
-  padding: 40px 20px 80px 20px;
+  padding: 40px 20px 40px 20px;
   .headersection();
   &__title {
     width: 165px;

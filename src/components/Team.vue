@@ -65,7 +65,7 @@ export default {
 <style lang="less">
 .team {
   width: 100%;
-  height: 100vh - 25px;
+  height: 517px;
   margin: 0;
   padding-top: 40px;
   background-color: @bodygraybg;

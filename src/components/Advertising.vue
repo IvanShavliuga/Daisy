@@ -27,9 +27,9 @@ export default {
 <style lang="less">
 .advertising {
   width: 100%;
-  height: 90vh;
+  height: 536px;
   margin: 0;
-  padding-top: 40px;
+  padding-top: 10px;
   padding-bottom: -40px;
   background-color: #fff;
   &__block {

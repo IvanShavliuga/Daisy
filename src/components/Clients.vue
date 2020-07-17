@@ -54,7 +54,7 @@ export default {
 <style lang="less">
 .clients {
   width: 100%;
-  height: 70vh;
+  height: 453px;
   margin: 0;
   padding-top: 80px;
   &__hexogon {

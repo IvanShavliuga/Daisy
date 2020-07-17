@@ -82,7 +82,7 @@ export default {
 <style lang="less">
 .process {
   width: 100%;
-  height: 120vh;
+  height: 841px;
   margin: 0;
   padding-top: 40px;
   .headersection();

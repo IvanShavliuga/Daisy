@@ -45,7 +45,7 @@ export default {
 <style scoped lang="less">
 .header {
   width: 100%;
-  height: 100vh;
+  height: 849px;
   margin: 0;
   background-image: url('../assets/images/header.jpg');
   background-repeat: no-repeat;
