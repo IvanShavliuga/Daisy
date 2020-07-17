@@ -197,7 +197,7 @@ export default {
   &__step4 {
     position: absolute;
     .hexogontext(@paragraphcolor, 262px, 302px);
-    right: 162px;
+    left: 348px + 174px;
     top: 70px;
     i:last-child {
       top: 200px;
