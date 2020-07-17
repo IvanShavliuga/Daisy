@@ -34,7 +34,7 @@
   padding-top: 150px;
   &__map {
     position: relative;
-    background-image: url(../assets/images/map.png);
+    background-image: url(../assets/images/map.jpg);
     background-repeat: no-repeat;
     height: 338px;
   }

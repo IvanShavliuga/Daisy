@@ -257,7 +257,7 @@ export default {
     position: absolute;
     top: 239px;
     left: 47px;
-    background-image: url('../assets/images/steps.png');
+    background-image: url('../assets/images/steps.jpg');
     .hexogonimage(white, 262px, 302px);
     &:after {
       content: ' ';
