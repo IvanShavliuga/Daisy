@@ -60,6 +60,9 @@ export default {
   background-image: url('../assets/images/header.jpg');
   background-repeat: no-repeat;
   background-size: 100% 99.9%;
+  @media screen and (max-width: @tablet) {
+    height: 549px;
+  }
   &__topline {
     display: flex;
     justify-content: space-between;
@@ -111,22 +114,6 @@ export default {
     height: 400px;
     &-title {
       .titlepicture();
-      width: 750px;
-      margin: 200px auto 10px auto;
-      @media screen and (max-width: @largetablet) {
-        width: 600px;
-        font-size: 40px;
-      }
-      @media screen and (max-width: @tablet) {
-        width: 500px;
-        font-size: 30px;
-      }
-      @media screen and (max-width: @smalltablet) {
-        width: 400px;
-        font-size: 30px;
-        text-wrap: wrap;
-        text-align: center;
-      }
       &:after, &:before {
         content: ' ';
         position: absolute;

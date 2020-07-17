@@ -92,12 +92,12 @@ export default {
   }
   &__steps {
     position: relative;
-    margin: 50px 0 50px 130px;
+    margin: 50px 0 50px 70px;
     @media screen and (min-width: @largetablet) and (max-width: @desktop) {
       margin-left: 80px;
     }
     @media screen and (max-width: @largetablet)  {
-      margin-left: -60px;
+      margin-left: 10px;
       margin-right: 10px;
     }
     &-img {

@@ -61,6 +61,9 @@ export default {
   height: 845px;
   margin: 0;
   padding: 40px 20px 40px 20px;
+  @media screen and (max-width: @tablet) {
+    height: 1300px;
+  }
   .headersection();
   &__title {
     width: 165px;
@@ -75,6 +78,9 @@ export default {
       display: flex;
       justify-content: space-between;
       padding: 0 25px;
+      @media screen and (max-width: @largetablet) {
+        padding: 0 10px;
+      }
     }
     &-item {
       list-style: none;
@@ -90,6 +96,9 @@ export default {
         content: '/';
         color: @bodycolor;
         padding-left: 60px;
+        @media screen and (max-width: @largetablet) {
+          padding-left: 10px;
+        }
         font-size: 20px;
         font-size: bold;
       }
@@ -113,6 +122,14 @@ export default {
         .portfolio__block-img, .portfolio__block-hover {
           width: 505px;
           height: 212px;
+          @media screen and (max-width: @desktop) {
+            width: 405px;
+            height: 212px;
+          }
+          @media screen and (max-width: @largetablet) {
+            width: 245px;
+            height: 212px;
+          }
         }
       }
       &:first-child, &nth-child(4) {
