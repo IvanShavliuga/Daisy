@@ -24,7 +24,7 @@
   padding: 80px 20px 80px 20px;
   &__block {
     border: 8px solid rgba(99, 99, 99, 0.4);
-    height: 75vh;
+    height: 570px;
     width: 95%;
     text-align: center;
     &-title {
@@ -42,7 +42,7 @@
       color: @itemactive;
     }
     &-button {
-      margin-top: 15px;
+      margin-top: 35px;
       .buttontransparent();
     }
   }
