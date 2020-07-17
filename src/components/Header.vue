@@ -10,7 +10,7 @@
             Daisy
           </div>
         </div>
-        <nav class="header__topline-menu">
+        <nav class="header__topline-menu" v-show="showmenu">
           <ul class="header__topline-list">
             <li class="header__topline-item active">about</li>
             <li class="header__topline-item">portfolio</li>
@@ -18,6 +18,11 @@
             <li class="header__topline-item">contact</li>
           </ul>
         </nav>
+        <div class="header__topline-burger" @click="showmenu=!showmenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
       <div class="header__block">
         <h1 class="header__block-title">
@@ -39,7 +44,12 @@
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  data () {
+    return {
+      showmenu: true
+    }
+  }
 }
 </script>
 <style scoped lang="less">
@@ -54,17 +64,30 @@ export default {
     display: flex;
     justify-content: space-between;
     padding-top: 45px;
+    @media screen and (max-width: @tablet) {
+      flex-direction: column;
+      justify-content: center;
+    }
     .logobrand();
     &-leftblock {
       display: flex;
       flex-grow: 1;
+      @media screen and (max-width: @tablet) {
+        justify-content: center;
+      }
     }
     &-menu {
       flex-grow: 1;
+      @media screen and (max-width: @tablet) {
+        margin-top: 20px;
+      }
     }
     &-list {
       display: flex;
       justify-content: flex-end;
+      @media screen and (max-width: @tablet) {
+        justify-content: space-between;
+      }
     }
     &-item {
       list-style: none;
@@ -75,6 +98,9 @@ export default {
       letter-spacing: 1px;
       line-height: 36px;
       font-family: @bodyfont;
+      @media screen and (max-width: @tablet) {
+        margin: 0 25px 5px 0;
+      }
     }
     .active {
       color: @itemactive;
@@ -82,11 +108,25 @@ export default {
     }
   }
   &__block {
-    height: 40vh;
-    padding: 11% 15%;
+    height: 400px;
     &-title {
       .titlepicture();
-      margin-bottom: 10px;
+      width: 750px;
+      margin: 200px auto 10px auto;
+      @media screen and (max-width: @largetablet) {
+        width: 600px;
+        font-size: 40px;
+      }
+      @media screen and (max-width: @tablet) {
+        width: 500px;
+        font-size: 30px;
+      }
+      @media screen and (max-width: @smalltablet) {
+        width: 400px;
+        font-size: 30px;
+        text-wrap: wrap;
+        text-align: center;
+      }
       &:after, &:before {
         content: ' ';
         position: absolute;
@@ -95,14 +135,26 @@ export default {
         height: 1px;
         background-color: #444;
         border: 4px solid #444;
+        @media screen and (max-width: @largetablet) {
+          width: 50px;
+        }
+        @media screen and (max-width: @tablet) {
+          display: none;
+        }
       }
       &:after {
         top: 25px;
         left: -140px;
+        @media screen and (max-width: @largetablet) {
+          left: -80px;
+        }
       }
       &:before {
         top: 25px;
         right: -120px;
+        @media screen and (max-width: @largetablet) {
+          right: -60px;
+        }
       }
     }
     &-firstword {
