@@ -46,8 +46,10 @@ export default {
     &-title {
       margin-right: 25px;
       text-align: right;
+      position: relative;
       &:before {
-        left: 400px;
+        right: -30px;
+        left: auto;
       }
     }
   }

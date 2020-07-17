@@ -55,7 +55,7 @@
               <span>4</span>
             </h4>
             <p>This is Photoshop's version  of loren ipsumm. Proin</p>
-            <i class="process__steps-img">
+            <i class="process__steps-img stepimg4">
               <img class="process__step4-img" src="../assets/images/step4.svg">
             </i>
             <i class="process__steps-img">
@@ -93,6 +93,13 @@ export default {
   &__steps {
     position: relative;
     margin: 50px 0 50px 130px;
+    @media screen and (min-width: @largetablet) and (max-width: @desktop) {
+      margin-left: 80px;
+    }
+    @media screen and (max-width: @largetablet)  {
+      margin-left: -60px;
+      margin-right: 10px;
+    }
     &-img {
       position: absolute;
       top: -15px;
@@ -199,6 +206,10 @@ export default {
     .hexogontext(@paragraphcolor, 262px, 302px);
     left: 348px + 174px;
     top: 70px;
+    @media screen and (max-width: @largetablet)  {
+      left: 348px + 174px - 87px;
+      top: 70px + 53px;
+    }
     i:last-child {
       top: 200px;
       left: 110px;
@@ -215,6 +226,11 @@ export default {
     div:first-child:after {
       top: 302px / 9 + 3px;
       left: -11px;
+      @media screen and (max-width: @largetablet)  {
+        left: 80px;
+        top: 10px;
+        width: 55px;
+      }
     }
     div:first-child:before {
       top: 302px / 9  + 3px;
@@ -228,6 +244,12 @@ export default {
       p {
         top: 10px;
         left: 60px;
+      }
+      .stepimg4 {
+        @media screen and (max-width: @largetablet)  {
+          left: 70px;
+          top: -70px;
+        }
       }
     }
     div:nth-child(2):before {
