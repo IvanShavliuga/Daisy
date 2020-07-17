@@ -40,7 +40,7 @@
   }
   &__hexogon {
     position: absolute;
-    left: 50%;
+    left: 49%;
     top: -20%;
     transform: translate(-50%, 20%);
     z-index: 20;
