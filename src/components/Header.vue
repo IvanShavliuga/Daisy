@@ -42,34 +42,19 @@ export default {
   name: 'Header'
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
 .header {
   width: 100%;
-  height: 100vh;
+  height: 849px;
   margin: 0;
-  background-image: url('../assets/images/header.png');
+  background-image: url('../assets/images/header.jpg');
   background-repeat: no-repeat;
   background-size: 100% 99.9%;
   &__topline {
     display: flex;
     justify-content: space-between;
     padding-top: 45px;
-    &-logo {
-      font-family: @logofont;
-      .hexogonlogo(@logocolor, #0c252d, 59px , 68px);
-    }
-    &-brand {
-      font-size: 35px;
-      letter-spacing: 0px;
-      line-height: 16px;
-      color: #ffffff;
-      font-weight: bold;
-      font-family: @logofont;
-      margin-left: 20px;
-      margin-top: 5px;
-    }
+    .logobrand();
     &-leftblock {
       display: flex;
       flex-grow: 1;
@@ -100,13 +85,7 @@ export default {
     height: 40vh;
     padding: 11% 15%;
     &-title {
-      color: @headercolor;
-      font-size: 51px;
-      font-weight: bold;
-      font-family: @bodyfont;
-      text-transform: uppercase;
-      word-spacing: 10px;
-      position: relative;
+      .titlepicture();
       margin-bottom: 10px;
       &:after, &:before {
         content: ' ';

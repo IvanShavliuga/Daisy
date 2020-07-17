@@ -54,7 +54,7 @@ export default {
 <style lang="less">
 .clients {
   width: 100%;
-  height: 70vh;
+  height: 453px;
   margin: 0;
   padding-top: 80px;
   &__hexogon {
@@ -151,23 +151,13 @@ export default {
       margin-top: 50px;
     }
     &-prev {
-      border: none;
-      background-image: url(../assets/images/arrow.svg);
-      background-color: white;
-      background-position: center center;
+      .navbutton();
       transform: rotateZ(180deg);
-      width: 31px;
-      height: 31px;
       margin-right: 20px;
       margin-left: -35px;
     }
     &-next {
-      border: none;
-      background-image: url(../assets/images/arrow.svg);
-      background-color: white;
-      background-position: center center;
-      width: 31px;
-      height: 31px;
+      .navbutton();
       margin-left: 20px;
     }
   }

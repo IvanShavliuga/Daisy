@@ -34,13 +34,13 @@
   padding-top: 150px;
   &__map {
     position: relative;
-    background-image: url(../assets/images/map.png);
+    background-image: url(../assets/images/map.jpg);
     background-repeat: no-repeat;
     height: 338px;
   }
   &__hexogon {
     position: absolute;
-    left: 50%;
+    left: 49%;
     top: -20%;
     transform: translate(-50%, 20%);
     z-index: 20;
@@ -102,25 +102,12 @@
   }
   &__bottom {
     position: relative;
-    background-image: url(../assets/images/footer.png);
+    background-image: url(../assets/images/footer.jpg);
     height: 208px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100%;
-    &-logo {
-      font-family: @logofont;
-      .hexogonlogo(@logocolor, #0c252d, 59px , 68px);
-    }
-    &-brand {
-      font-size: 35px;
-      letter-spacing: 0px;
-      line-height: 16px;
-      color: #ffffff;
-      font-weight: bold;
-      font-family: @logofont;
-      margin-left: 20px;
-      margin-top: 5px;
-    }
+    .logobrand();
     &-logoblock {
       display: flex;
       flex-grow: 1;

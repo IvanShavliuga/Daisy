@@ -14,80 +14,6 @@
       </ul>
     </nav>
     <ul class="portfolio__block">
-      <!--<li class="portfolio__block-item">
-        <div class="portfolio__block-hover"
-          v-show="(showid==true)&&(id==0)"
-          v-on:mouseleave="showid=false; id=-1"
-          >
-          <h4 class="portfolio__block-title">
-            portfolio #1
-          </h4>
-        </div>
-        <img
-          class="portfolio__block-img"
-          src="../assets/images/portfolio_1.png"
-          alt="Portfolio #1"
-          v-on:mouseover="showid=true; id=0"
-        >
-      </li>
-      <li class="portfolio__block-item">
-        <div class="portfolio__block-hover"
-          v-show="(showid==true)&&(id==1)"
-          v-on:mouseleave="showid=false; id=-1">
-          <h4 class="portfolio__block-title">
-            portfolio #2
-          </h4>
-        </div>
-        <img
-          class="portfolio__block-img"
-          src="../assets/images/portfolio_2.png"
-          alt="Portfolio #2"
-          v-on:mouseover="showid=true; id=1">
-      </li>
-      <li class="portfolio__block-item">
-        <div class="portfolio__block-hover">
-          <h4 class="portfolio__block-title">
-            portfolio #3
-          </h4>
-        </div>
-        <img
-          class="portfolio__block-img"
-          src="../assets/images/portfolio_3.png"
-          alt="Portfolio #3">
-      </li>
-      <li class="portfolio__block-item">
-        <div class="portfolio__block-hover">
-          <h4 class="portfolio__block-title">
-            portfolio #4
-          </h4>
-        </div>
-        <img
-          class="portfolio__block-img"
-          src="../assets/images/portfolio_4.png"
-          alt="Portfolio #4">
-      </li>
-      <li class="portfolio__block-item">
-        <div class="portfolio__block-hover">
-          <h4 class="portfolio__block-title">
-            portfolio #5
-          </h4>
-        </div>
-        <img
-          class="portfolio__block-img"
-          src="../assets/images/portfolio_5.png"
-          alt="Portfolio #5">
-      </li>
-      <li class="portfolio__block-item">
-        <div class="portfolio__block-hover">
-          <h4 class="portfolio__block-title">
-            portfolio #6
-          </h4>
-        </div>
-        <img
-          class="portfolio__block-img"
-          src="../assets/images/portfolio_6.png"
-          alt="Portfolio #6">
-      </li>-->
     <li class="portfolio__block-item"
         v-for="(p,k) in pictures"
         :key="k"
@@ -112,12 +38,12 @@
 </section>
 </template>
 <script>
-import img1 from '../assets/images/portfolio_1.png'
-import img2 from '../assets/images/portfolio_2.png'
-import img3 from '../assets/images/portfolio_3.png'
-import img4 from '../assets/images/portfolio_4.png'
-import img5 from '../assets/images/portfolio_5.png'
-import img6 from '../assets/images/portfolio_6.png'
+import img1 from '../assets/images/portfolio_1.jpg'
+import img2 from '../assets/images/portfolio_2.jpg'
+import img3 from '../assets/images/portfolio_3.jpg'
+import img4 from '../assets/images/portfolio_4.jpg'
+import img5 from '../assets/images/portfolio_5.jpg'
+import img6 from '../assets/images/portfolio_6.jpg'
 export default {
   name: 'Portfolio',
   data () {
@@ -132,9 +58,9 @@ export default {
 <style lang="less">
 .portfolio {
   width: 100% -40px;
-  height: 100% -160px;
+  height: 845px;
   margin: 0;
-  padding: 40px 20px 80px 20px;
+  padding: 40px 20px 40px 20px;
   .headersection();
   &__title {
     width: 165px;

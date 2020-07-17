@@ -72,7 +72,7 @@ export default {
 <style lang="less">
 .receive {
   width: 100%;
-  height: 80vh;
+  height: 576px;
   margin: 0;
   padding-top: 40px;
   .headersection();
