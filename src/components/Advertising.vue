@@ -3,7 +3,10 @@
     <div class="wrapper">
       <div class="advertising__block">
         <div class="advertising__images">
-          <img class="advertising__images-macbook" alt="advertising macbook" src="../assets/images/macbook2.png"/>
+          <picture>
+            <source media="(max-width: 1115px)" srcset="../assets/images/macbook2_mobile.png">
+            <img class="advertising__images-macbook" alt="advertising macbook" src="../assets/images/macbook2.png"/>
+          </picture>
         </div>
         <div class="advertising__text">
           <h3 class="advertising__text-title">Advertising
@@ -63,6 +66,12 @@ export default {
       top: 10px;
       right: -80px;
       z-index: 20;
+      @media screen and (max-width: @largetablet) {
+        right: auto;
+        left: 30px;
+        width: 400px;
+        height: 300px;
+      }
     }
   }
 }

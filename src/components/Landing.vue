@@ -17,9 +17,18 @@
           <button class="landing__text-button">More details</button>
         </div>
         <div class="landing__images">
-          <img class="landing__images-desktop" alt="landing desktop" src="../assets/images/desktop.png"/>
-          <img class="landing__images-macbook" alt="landing macbook" src="../assets/images/macbook.png"/>
-          <img class="landing__images-tablet" alt="landing tablet" src="../assets/images/tablet.png"/>
+          <picture>
+            <source media="(max-width: 1115px)" srcset="../assets/images/macbook_m.png">
+            <img class="landing__images-macbook" alt="advertising macbook" src="../assets/images/macbook.png"/>
+          </picture>
+          <picture>
+            <source media="(max-width: 1115px)" srcset="../assets/images/desktop_m.png">
+            <img class="landing__images-desktop" alt="advertising macbook" src="../assets/images/desktop.png"/>
+          </picture>
+          <picture>
+            <source media="(max-width: 1115px)" srcset="../assets/images/tablet_m.png">
+            <img class="landing__images-tablet" alt="advertising macbook" src="../assets/images/tablet.png"/>
+          </picture>
         </div>
       </div>
     </div>
@@ -63,7 +72,7 @@ export default {
       left: -80px;
       z-index: 10;
       @media screen and (max-width: @largetablet) {
-        left: -120px;
+        left: -190px;
       }
     }
     &-macbook{
@@ -71,7 +80,7 @@ export default {
       left: -170px;
       z-index: 20;
       @media screen and (max-width: @largetablet) {
-        left: -210px;
+        left: -280px;
       }
     }
     &-tablet {
@@ -79,7 +88,7 @@ export default {
       left: 210px;
       z-index: 20;
       @media screen and (max-width: @largetablet) {
-        left: 170px;
+        left: 100px;
       }
     }
   }
