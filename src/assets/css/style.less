@@ -12,10 +12,14 @@ body {
 }
 .wrapper {
   width: 80%;
-  @media screen and (max-width: @desktop) {
-    width: 90%;
-  }
   padding: 0;
   margin: 0 auto;
   height: inherit;
+  @media screen and (max-width: @desktop) {
+    width: 90%;
+  }
+  @media screen and (max-width: @largetablet) {
+    width: 100%;
+    margin: 0;
+  }
 }

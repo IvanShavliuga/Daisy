@@ -46,6 +46,9 @@ export default {
   &__images {
     width: 40%;
     position: relative;
+    @media screen and (max-width: @largetablet) {
+      width: 30%;
+    }
     img {
       position: absolute;
     }
@@ -53,6 +56,9 @@ export default {
       top: 20px;
       left: -160px;
       z-index: 10;
+      @media screen and (max-width: @largetablet) {
+        left: -260px;
+      }
     }
   }
 }

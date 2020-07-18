@@ -52,6 +52,9 @@ export default {
   &__images {
     width: 40%;
     position: relative;
+    @media screen and (max-width: @largetablet) {
+      width: 30%;
+    }
     img {
       position: absolute;
     }
@@ -59,16 +62,25 @@ export default {
       top: 20px;
       left: -80px;
       z-index: 10;
+      @media screen and (max-width: @largetablet) {
+        left: -120px;
+      }
     }
     &-macbook{
       top: 170px;
       left: -170px;
       z-index: 20;
+      @media screen and (max-width: @largetablet) {
+        left: -210px;
+      }
     }
     &-tablet {
       top: 150px;
       left: 210px;
       z-index: 20;
+      @media screen and (max-width: @largetablet) {
+        left: 170px;
+      }
     }
   }
 }
