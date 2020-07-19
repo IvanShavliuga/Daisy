@@ -129,7 +129,7 @@ export default {
         .portfolio__block-img, .portfolio__block-hover {
           width: 505px;
           height: 212px;
-          @media screen and (max-width: 1159px) {
+          @media screen and (max-width: 1325px) {
             width: 355px;
             height: 212px;
           }

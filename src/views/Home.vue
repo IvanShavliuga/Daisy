@@ -19,7 +19,7 @@ main {
   padding: 0;
 }
 section {
-  border-right: 2px solid red;
+  /*border-right: 2px solid red;*/
 }
 </style>
 <script>
