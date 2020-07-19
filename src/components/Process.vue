@@ -1,6 +1,5 @@
 <template>
   <section class="process">
-    <div class="wrapper">
       <h2 class="process__title">
         Our
         <span class="process__title-lastword">process</span>
@@ -71,7 +70,6 @@
           <div></div>
         </div>
       </div>
-    </div>
   </section>
 </template>
 <script>
@@ -92,13 +90,14 @@ export default {
   }
   &__steps {
     position: relative;
-    margin: 50px 0 50px 70px;
-    @media screen and (min-width: @largetablet) and (max-width: @desktop) {
-      margin-left: 80px;
+    width: 90%;
+    height: 700px;
+    margin: 50px 0 50px auto;
+    @media screen  and (min-width: @desktop) {
+      margin-left: 70px;
     }
     @media screen and (max-width: @largetablet)  {
-      margin-left: 30px;
-      margin-right: 30px;
+      margin: 5% 0 50px 7%;
     }
     &-img {
       position: absolute;
@@ -204,12 +203,45 @@ export default {
   &__step4 {
     position: absolute;
     .hexogontext(@paragraphcolor, 262px, 302px);
+    /*@media screen and (max-width: 800px) {
+      .hexogontext(@paragraphcolor, 174px, 201px);
+      left: 348px + 174px - 87px;
+      top: 70px + 83px;
+      div:first-child:after, div:first-child:before {
+        height: 4px;
+        background-color: @stepsline;
+        width: 201px / 2 ;
+      }
+      div:nth-child(2):after {
+        content: ' ';
+        position: absolute;
+        top: 49px;
+        left: -51px;
+        background-color: @stepsline;
+        width: 104px;
+        height: 4px;
+        z-index: 30;
+        transform: rotateZ(90deg);
+      }
+      div:nth-child(2):before {
+        content: ' ';
+        position: absolute;
+        top: 50px;
+        right: -51px;
+        background-color: @stepsline;
+        width: 103px;
+        height: 4px;
+        z-index: 30;
+        transform: rotateZ(90deg);
+      }
+    }*/
     left: 348px + 174px;
     top: 70px;
     @media screen and (max-width: @largetablet)  {
       left: 348px + 174px - 87px;
       top: 70px + 53px;
     }
+    /*@media screen and (min-width: 801px) {*/
     i:last-child {
       top: 200px;
       left: 110px;
@@ -293,5 +325,6 @@ export default {
       transform: rotateZ(30.3deg);
     }
   }
+  /*}*/
 }
 </style>

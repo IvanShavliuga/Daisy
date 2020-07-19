@@ -64,7 +64,6 @@ export default {
 </script>
 <style lang="less">
 .team {
-  width: 100%;
   height: 517px;
   margin: 0;
   padding-top: 40px;

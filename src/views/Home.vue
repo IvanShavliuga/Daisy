@@ -18,6 +18,9 @@ main {
   margin: 0;
   padding: 0;
 }
+section {
+  /*border-right: 2px solid red;*/
+}
 </style>
 <script>
 // @ is an alias to /src

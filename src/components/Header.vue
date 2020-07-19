@@ -60,7 +60,7 @@ export default {
   background-image: url('../assets/images/header.jpg');
   background-repeat: no-repeat;
   background-size: 100% 99.9%;
-  @media screen and (max-width: @tablet) {
+  @media screen and (max-width: @largetablet) {
     height: 549px;
   }
   &__topline {
