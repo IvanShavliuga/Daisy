@@ -71,9 +71,9 @@ export default {
 </script>
 <style lang="less">
 .receive {
-  height: 576px;
   margin: 0;
   padding-top: 40px;
+  padding-bottom: 40px;
   .headersection();
   &__title {
     width: 360px;
@@ -84,6 +84,9 @@ export default {
     &-list {
       display: flex;
       justify-content: space-between;
+      @media screen and (max-width: @tablet) {
+        flex-wrap: wrap;
+      }
     }
     &-item {
       margin: 0 10px;

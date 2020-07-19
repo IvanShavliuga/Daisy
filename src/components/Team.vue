@@ -64,9 +64,9 @@ export default {
 </script>
 <style lang="less">
 .team {
-  height: 517px;
   margin: 0;
   padding-top: 40px;
+  padding-bottom: 40px;
   background-color: @bodygraybg;
   .headersection();
   &__title {

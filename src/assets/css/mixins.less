@@ -318,12 +318,19 @@
 }
 
 .textleftsection {
+  &__block {
+    @media screen and (max-width: @largetablet) {
+      flex-direction: column-reverse;
+    }
+  }
   &__text {
     width: 40%;
     padding: 55px 10px;
     position: relative;
     @media screen and (max-width: @largetablet) {
-      width: 30%;
+      width: 50%;
+      text-align: justify;
+      margin: 10px auto;
     }
     &-title {
       position: relative;
