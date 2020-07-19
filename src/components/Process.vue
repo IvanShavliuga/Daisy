@@ -1,6 +1,5 @@
 <template>
   <section class="process">
-    <div class="wrapper">
       <h2 class="process__title">
         Our
         <span class="process__title-lastword">process</span>
@@ -71,7 +70,6 @@
           <div></div>
         </div>
       </div>
-    </div>
   </section>
 </template>
 <script>
@@ -92,13 +90,14 @@ export default {
   }
   &__steps {
     position: relative;
-    margin: 50px 0 50px 70px;
-    @media screen and (min-width: @largetablet) and (max-width: @desktop) {
-      margin-left: 80px;
+    width: 90%;
+    height: 700px;
+    margin: 50px 0 50px auto;
+    @media screen  and (min-width: @desktop) {
+      margin-left: 70px;
     }
     @media screen and (max-width: @largetablet)  {
-      margin-left: 30px;
-      margin-right: 30px;
+      margin: 5% 0 50px 7%;
     }
     &-img {
       position: absolute;

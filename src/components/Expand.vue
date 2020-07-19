@@ -15,17 +15,15 @@
 </template>
 <style lang="less">
 .expand {
-  width: 100% -40px;
   height: 606px;
   margin: 0;
   background-image: url('../assets/images/expand.jpg');
   background-repeat: no-repeat;
   background-size: 100% 99.9%;
-  padding: 80px 20px 80px 20px;
+  padding: 80px 20px;
   &__block {
     border: 8px solid rgba(99, 99, 99, 0.4);
     height: 570px;
-    width: 95%;
     text-align: center;
     &-title {
       font-size: 51px;

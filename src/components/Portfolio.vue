@@ -57,7 +57,6 @@ export default {
 </script>
 <style lang="less">
 .portfolio {
-  width: 100%;
   height: 845px;
   margin: 0 auto;
   padding: 40px 20px 40px 20px;
@@ -74,14 +73,15 @@ export default {
     padding: 5px 0;
     margin-top: 50px;
     margin-bottom: 40px;
+    @media screen and (max-width: 800px) {
+      width: 750px;
+    }
     &-list {
       display: flex;
       justify-content: space-between;
       padding: 0 25px;
-      @media screen and (max-width: @tablet) {
+      @media screen and (max-width: 800px) {
         justify-content: center;
-        flex-wrap: wrap;
-        padding: 0 5px;
       }
     }
     &-item {
