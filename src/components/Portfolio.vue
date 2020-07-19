@@ -57,7 +57,7 @@ export default {
 </script>
 <style lang="less">
 .portfolio {
-  width: 850px;
+  width: 100%;
   height: 845px;
   margin: 0 auto;
   padding: 40px 20px 40px 20px;
@@ -74,7 +74,6 @@ export default {
     padding: 5px 0;
     margin-top: 50px;
     margin-bottom: 40px;
-    width: 845px;
     &-list {
       display: flex;
       justify-content: space-between;
