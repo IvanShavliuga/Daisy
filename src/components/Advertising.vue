@@ -47,16 +47,23 @@ export default {
   .textleftsection();
   &__text {
     text-align: right;
+    @media screen and (max-width: @largetablet) {
+      text-align: left!important;
+    }
     &-desc {
       text-align: right;
+      @media screen and (max-width: @largetablet) {
+        text-align: left!important;
+      }
     }
     &-title {
       margin-right: 25px;
       text-align: right;
       position: relative;
       @media screen and (max-width: @largetablet) {
-        margin-left: 25px;
-        text-align: left;
+        margin-left: 25px!important;
+        margin-right: 0!important;
+        text-align: left!important;
       }
       &:before {
         right: -30px;
