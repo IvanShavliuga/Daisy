@@ -15,4 +15,11 @@ body {
   padding: 0;
   margin: 0 auto;
   height: inherit;
+  @media screen and (max-width: @desktop) {
+    width: 90%;
+  }
+  @media screen and (max-width: @largetablet) {
+    width: 100%;
+    margin: 0;
+  }
 }

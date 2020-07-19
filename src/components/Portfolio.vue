@@ -57,10 +57,13 @@ export default {
 </script>
 <style lang="less">
 .portfolio {
-  width: 100% -40px;
+  width: 100%;
   height: 845px;
-  margin: 0;
+  margin: 0 auto;
   padding: 40px 20px 40px 20px;
+  @media screen and (max-width: 824px) {
+    height: 1040px;
+  }
   .headersection();
   &__title {
     width: 165px;
@@ -75,6 +78,11 @@ export default {
       display: flex;
       justify-content: space-between;
       padding: 0 25px;
+      @media screen and (max-width: @tablet) {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 5px;
+      }
     }
     &-item {
       list-style: none;
@@ -86,10 +94,18 @@ export default {
       font-family: @bodyfont;
       text-align: center;
       text-transform: uppercase;
+      @media screen and (max-width: @largetablet) {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
       &:after {
         content: '/';
         color: @bodycolor;
         padding-left: 60px;
+        @media screen and (max-width: @largetablet) {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
         font-size: 20px;
         font-size: bold;
       }
@@ -113,6 +129,23 @@ export default {
         .portfolio__block-img, .portfolio__block-hover {
           width: 505px;
           height: 212px;
+          @media screen and (max-width: 1159px) {
+            width: 355px;
+            height: 212px;
+          }
+          @media screen and (max-width: 1087px) {
+            width: 245px;
+            height: 212px;
+          }
+          @media screen and (max-width: 822px) {
+            width: 210px;
+          }
+          @media screen and (max-width: 720px) {
+            width: 260px;
+          }
+          @media screen and (max-width: 720px) {
+            width: 260px;
+          }
         }
       }
       &:first-child, &nth-child(4) {
@@ -121,13 +154,21 @@ export default {
       &:last-child, &nth-child(3) {
         margin-right: 0;
       }
+      .portfolio__block-img, .portfolio__block-hover {
+        width: 245px;
+        height: 212px;
+        @media screen and (max-width: 822px) {
+          width: 210px;
+        }
+        @media screen and (max-width: 720px) {
+          width: 260px;
+        }
+      }
     }
     &-hover {
       position: absolute;
       left: 0;
       top: 0;
-      width: 245px;
-      height: 212px;
       background-color: rgba(@itemactive, 0.6);
       color: white;
       z-index: 20;
@@ -136,10 +177,6 @@ export default {
       line-height: 26px;
       font-weight: bold;
       font-family: @bodyfont;
-    }
-    &-img {
-      width: 245px;
-      height: 212px;
     }
     &-title {
       margin: 20px;

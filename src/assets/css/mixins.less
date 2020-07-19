@@ -323,6 +323,9 @@
     width: 40%;
     padding: 55px 10px;
     position: relative;
+    @media screen and (max-width: @largetablet) {
+      width: 30%;
+    }
     &-title {
       position: relative;
       font-size: 28px;
@@ -383,6 +386,23 @@
   text-transform: uppercase;
   word-spacing: 10px;
   position: relative;
+  width: 750px;
+  margin: 200px auto 10px auto;
+  @media screen and (max-width: @largetablet) {
+    width: 600px;
+    font-size: 40px;
+    margin: 40px auto 10px auto;
+  }
+  @media screen and (max-width: @tablet) {
+    width: 500px;
+    font-size: 30px;
+  }
+  @media screen and (max-width: @smalltablet) {
+    width: 400px;
+    font-size: 30px;
+    text-wrap: wrap;
+    text-align: center;
+  }
 }
 .logobrand {
   &-logo {

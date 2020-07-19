@@ -17,9 +17,18 @@
           <button class="landing__text-button">More details</button>
         </div>
         <div class="landing__images">
-          <img class="landing__images-desktop" alt="landing desktop" src="../assets/images/desktop.png"/>
-          <img class="landing__images-macbook" alt="landing macbook" src="../assets/images/macbook.png"/>
-          <img class="landing__images-tablet" alt="landing tablet" src="../assets/images/tablet.png"/>
+          <picture>
+            <source media="(max-width: 1115px)" srcset="../assets/images/macbook_m.png">
+            <img class="landing__images-macbook" alt="advertising macbook" src="../assets/images/macbook.png"/>
+          </picture>
+          <picture>
+            <source media="(max-width: 1115px)" srcset="../assets/images/desktop_m.png">
+            <img class="landing__images-desktop" alt="advertising macbook" src="../assets/images/desktop.png"/>
+          </picture>
+          <picture>
+            <source media="(max-width: 1115px)" srcset="../assets/images/tablet_m.png">
+            <img class="landing__images-tablet" alt="advertising macbook" src="../assets/images/tablet.png"/>
+          </picture>
         </div>
       </div>
     </div>
@@ -43,6 +52,7 @@ export default {
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
+    width: 90%;
   }
   .textleftsection();
   &__title {
@@ -52,6 +62,9 @@ export default {
   &__images {
     width: 40%;
     position: relative;
+    @media screen and (max-width: @largetablet) {
+      width: 30%;
+    }
     img {
       position: absolute;
     }
@@ -59,16 +72,25 @@ export default {
       top: 20px;
       left: -80px;
       z-index: 10;
+      @media screen and (max-width: @largetablet) {
+        left: -190px;
+      }
     }
     &-macbook{
       top: 170px;
       left: -170px;
       z-index: 20;
+      @media screen and (max-width: @largetablet) {
+        left: -280px;
+      }
     }
     &-tablet {
       top: 150px;
       left: 210px;
       z-index: 20;
+      @media screen and (max-width: @largetablet) {
+        left: 100px;
+      }
     }
   }
 }

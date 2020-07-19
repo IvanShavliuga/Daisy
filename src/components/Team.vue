@@ -79,6 +79,9 @@ export default {
     padding-top: 40px;
     width: 80%;
     margin-left: 7%;
+    @media screen and (max-width: @largetablet) {
+      margin-left: 20px;
+    }
     &-item {
       position: relative;
       list-style: none;

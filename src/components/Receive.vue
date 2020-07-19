@@ -71,7 +71,7 @@ export default {
 </script>
 <style lang="less">
 .receive {
-  width: 100%;
+  width: 90%;
   height: 576px;
   margin: 0;
   padding-top: 40px;
