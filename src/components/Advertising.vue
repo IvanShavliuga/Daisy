@@ -39,6 +39,7 @@ export default {
     display: flex;
     justify-content: space-between;
     padding-top: 100px;
+    width: 90%;
   }
   .textleftsection();
   &__text {

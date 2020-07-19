@@ -67,6 +67,7 @@ export default {
     display: flex;
     justify-content: space-between;
     padding-top: 45px;
+    width: 90%;
     @media screen and (max-width: @tablet) {
       flex-direction: column;
       justify-content: center;

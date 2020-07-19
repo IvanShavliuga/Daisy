@@ -97,8 +97,8 @@ export default {
       margin-left: 80px;
     }
     @media screen and (max-width: @largetablet)  {
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: 30px;
+      margin-right: 30px;
     }
     &-img {
       position: absolute;
