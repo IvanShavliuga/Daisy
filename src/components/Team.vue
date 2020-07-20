@@ -74,17 +74,26 @@ export default {
   }
   &__block {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 40px;
-    width: 80%;
-    margin-left: 7%;
     @media screen and (max-width: @largetablet) {
       margin-left: 20px;
+    }
+    @media screen and (max-width: @tablet) {
+      margin-left: 0;
+      justify-content: space-between;
     }
     &-item {
       position: relative;
       list-style: none;
       width: 230px;
+      @media screen and (max-width: @tablet) {
+        transform: scale(0.9);
+        margin-right: 30px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
     }
     &-hexogon {
       width: 147px;

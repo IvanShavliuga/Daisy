@@ -76,6 +76,9 @@ export default {
     &-leftblock {
       display: flex;
       flex-grow: 1;
+      @media screen and (max-width: 1120px) {
+        padding-left: 40px;
+      }
       @media screen and (max-width: @tablet) {
         justify-content: center;
       }
