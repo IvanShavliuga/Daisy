@@ -99,6 +99,9 @@ export default {
     @media screen and (max-width: @largetablet)  {
       margin: 5% 0 50px 7%;
     }
+    @media screen and (max-width: @tablet) {
+      transform: scale(0.8);
+    }
     &-img {
       position: absolute;
       top: -15px;

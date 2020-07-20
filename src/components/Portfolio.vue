@@ -57,12 +57,8 @@ export default {
 </script>
 <style lang="less">
 .portfolio {
-  height: 845px;
   margin: 0 auto;
   padding: 40px 20px 40px 20px;
-  @media screen and (max-width: 824px) {
-    height: 1040px;
-  }
   .headersection();
   &__title {
     width: 165px;
@@ -74,7 +70,7 @@ export default {
     margin-top: 50px;
     margin-bottom: 40px;
     @media screen and (max-width: 800px) {
-      width: 750px;
+      width: 90%;
     }
     &-list {
       display: flex;
@@ -82,6 +78,8 @@ export default {
       padding: 0 25px;
       @media screen and (max-width: 800px) {
         justify-content: center;
+        display: inline-flex;
+        padding: 0;
       }
     }
     &-item {
@@ -98,6 +96,10 @@ export default {
         padding-left: 10px;
         padding-right: 10px;
       }
+      @media screen and (max-width: 800px) {
+        padding-left: -20px;
+        padding-right: 10px;
+      }
       &:after {
         content: '/';
         color: @bodycolor;
@@ -105,6 +107,13 @@ export default {
         @media screen and (max-width: @largetablet) {
           padding-left: 10px;
           padding-right: 10px;
+        }
+        @media screen and (max-width: 800px) {
+          padding-left: 10px;
+          padding-right: 0;
+        }
+        @media screen and (max-width: 730px) {
+          display: none;
         }
         font-size: 20px;
         font-size: bold;

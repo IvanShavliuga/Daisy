@@ -14,7 +14,7 @@
         </div>
         <div class="marketing__images">
           <picture>
-            <source media="(max-width: 1115px)" srcset="../assets/images/marketing_m.png">
+            <source media="(max-width: 500px)" srcset="../assets/images/marketing_m.png">
             <img class="marketing__images-marketing" alt="marketing" src="../assets/images/marketing.png"/>
           </picture>
         </div>
@@ -29,11 +29,9 @@ export default {
 </script>
 <style scoped lang="less">
 .marketing {
-  width: 100%;
-  height: 533px;
   margin: 0;
   padding-top: 10px;
-  padding-bottom: -40px;
+  padding-bottom: 40px;
   background-color: @bodygraybg;
   .headersection();
   &__block {
@@ -49,20 +47,11 @@ export default {
   }
   &__images {
     width: 40%;
-    position: relative;
     @media screen and (max-width: @largetablet) {
-      width: 30%;
-    }
-    img {
-      position: absolute;
+      width: 100%;
+      text-align: center;
     }
     &-marketing {
-      top: 20px;
-      left: -160px;
-      z-index: 10;
-      @media screen and (max-width: @largetablet) {
-        left: -260px;
-      }
     }
   }
 }
