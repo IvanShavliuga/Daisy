@@ -67,18 +67,15 @@ export default {
     border-top: 1px solid @bodycolor;
     border-bottom: 1px solid @bodycolor;
     padding: 5px 0;
-    margin-top: 50px;
-    margin-bottom: 40px;
-    @media screen and (max-width: 800px) {
-      width: 90%;
-    }
+    width: 100%;
+    margin: 50px 0;
     &-list {
       display: flex;
       justify-content: space-between;
       padding: 0 25px;
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 850px) {
         justify-content: center;
-        display: inline-flex;
+        flex-wrap: wrap;
         padding: 0;
       }
     }
@@ -105,14 +102,14 @@ export default {
         color: @bodycolor;
         padding-left: 60px;
         @media screen and (max-width: @largetablet) {
-          padding-left: 10px;
+          padding-left: 30px;
           padding-right: 10px;
         }
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 850px) {
           padding-left: 10px;
-          padding-right: 0;
+          padding-right: -20px;
         }
-        @media screen and (max-width: 730px) {
+        @media screen and (max-width: 772px) {
           display: none;
         }
         font-size: 20px;
@@ -130,6 +127,8 @@ export default {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    width: 100%;
+    margin: 50px 0;
     &-item {
       list-style: none;
       position: relative;
@@ -140,20 +139,22 @@ export default {
           height: 212px;
           @media screen and (max-width: 1325px) {
             width: 355px;
-            height: 212px;
           }
-          @media screen and (max-width: 1087px) {
+          @media screen and (max-width: 954px) {
+            width: 285px;
+          }
+          /*@media screen and (max-width: 1147px) {
             width: 245px;
-            height: 212px;
           }
-          @media screen and (max-width: 822px) {
+          @media screen and (max-width: 1109px) {
+            width: 210px;
+          }*/
+          @media screen and (max-width: 877px) {
             width: 210px;
           }
-          @media screen and (max-width: 720px) {
-            width: 260px;
-          }
-          @media screen and (max-width: 720px) {
-            width: 260px;
+          @media screen and (max-width: 793px) {
+            width: 180px;
+            height: 180px;
           }
         }
       }
@@ -166,11 +167,15 @@ export default {
       .portfolio__block-img, .portfolio__block-hover {
         width: 245px;
         height: 212px;
-        @media screen and (max-width: 822px) {
+        @media screen and (max-width: 1109px) {
           width: 210px;
         }
-        @media screen and (max-width: 720px) {
-          width: 260px;
+        @media screen and (max-width: 877px) {
+          width: 210px;
+        }
+        @media screen and (max-width: 793px) {
+          width: 180px;
+          height: 180px;
         }
       }
     }

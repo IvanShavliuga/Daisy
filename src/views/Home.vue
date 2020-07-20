@@ -17,10 +17,10 @@
 main {
   margin: 0;
   padding: 0;
-  border-right: 2px solid blue;
+  /*border-right: 2px solid blue;
 }
 section {
-  border-right: 2px solid red;
+  border-right: 2px solid red;*/
 }
 </style>
 <script>

@@ -18,7 +18,7 @@
         </div>
         <div class="landing__images">
           <picture>
-            <source media="(max-width: 500px)" srcset="../assets/images/landing_m.png">
+            <source media="(max-width: 740px)" srcset="../assets/images/landing_m.png">
             <img class="landing__images-img" alt="advertising macbook" src="../assets/images/landing.png"/>
           </picture>
         </div>

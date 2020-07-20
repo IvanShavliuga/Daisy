@@ -81,18 +81,16 @@ export default {
     }
     @media screen and (max-width: @tablet) {
       margin-left: 0;
-      justify-content: space-between;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
     }
     &-item {
       position: relative;
       list-style: none;
       width: 230px;
       @media screen and (max-width: @tablet) {
-        transform: scale(0.9);
-        margin-right: 30px;
-        &:last-child {
-          margin-right: 0;
-        }
+        margin-bottom: 20px;
       }
     }
     &-hexogon {
@@ -159,6 +157,9 @@ export default {
       font-family: @bodyfont;
       text-align: center;
       margin: 10px 0;
+      @media screen and (max-width: 765px) {
+        font-size: 24px;
+      }
     }
     &-prof {
       font-size: 28px / 1.5;
