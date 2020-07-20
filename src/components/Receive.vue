@@ -85,6 +85,9 @@ export default {
       display: flex;
       justify-content: space-between;
       @media screen and (max-width: @tablet) {
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
       }
     }
@@ -93,6 +96,9 @@ export default {
       list-style: none;
       width: 130px;
       text-align: center;
+      @media screen and (max-width: @tablet) {
+        margin-bottom: 50px;
+      }
     }
     &-hexogon {
       .hexogonicon(@itemactive, 100px, 116px);

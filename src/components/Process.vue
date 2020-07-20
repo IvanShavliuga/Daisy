@@ -79,10 +79,12 @@ export default {
 </script>
 <style lang="less">
 .process {
-  width: 100%;
   height: 841px;
   margin: 0;
   padding-top: 40px;
+  @media screen  and (max-width: @desktop) {
+    height: 741px;
+  }
   .headersection();
   &__title {
     width: 190px;
@@ -90,17 +92,24 @@ export default {
   }
   &__steps {
     position: relative;
-    width: 90%;
+    width: 800px;
     height: 700px;
-    margin: 50px 0 50px auto;
-    @media screen  and (min-width: @desktop) {
-      margin-left: 70px;
-    }
-    @media screen and (max-width: @largetablet)  {
-      margin: 5% 0 50px 7%;
+    margin: 50px auto;
+    @media screen  and (max-width: @desktop) {
+      transform: scale(0.9);
+      margin: 20px auto;
+      height: 550px;
     }
     @media screen and (max-width: @tablet) {
       transform: scale(0.8);
+      margin: 0;
+      margin-left: -50px;
+      width: 700px;
+    }
+    @media screen and (max-width: @largephone) {
+      transform: scale(0.7);
+      margin: 0;
+      margin-left: -50px;
     }
     &-img {
       position: absolute;

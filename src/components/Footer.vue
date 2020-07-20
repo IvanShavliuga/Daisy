@@ -107,7 +107,7 @@
     height: 208px;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100%;
+    background-size: cover;
     .logobrand();
     &-logoblock {
       display: flex;

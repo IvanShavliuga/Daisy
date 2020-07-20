@@ -4,7 +4,7 @@
       <div class="advertising__block">
         <div class="advertising__images">
           <picture>
-            <source media="(max-width: 500px)" srcset="../assets/images/macbook2_mobile.png">
+            <source media="(max-width: 740px)" srcset="../assets/images/macbook2_mobile.png">
             <img class="advertising__images-macbook" alt="advertising macbook" src="../assets/images/macbook2.png"/>
           </picture>
         </div>

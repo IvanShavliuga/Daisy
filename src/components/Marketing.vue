@@ -14,7 +14,7 @@
         </div>
         <div class="marketing__images">
           <picture>
-            <source media="(max-width: 500px)" srcset="../assets/images/marketing_m.png">
+            <source media="(max-width: 740px)" srcset="../assets/images/marketing_m.png">
             <img class="marketing__images-marketing" alt="marketing" src="../assets/images/marketing.png"/>
           </picture>
         </div>

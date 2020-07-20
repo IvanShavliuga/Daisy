@@ -53,13 +53,20 @@ export default {
 </script>
 <style lang="less">
 .clients {
-  width: 100%;
+  height: 400px;
   margin: 0;
   padding-top: 80px;
+  position: relative;
+  @media screen and (max-width: 620px)  {
+    height: 550px;
+  }
   &__hexogon {
     .hexogonicon(@itemactive, 74px, 86px);
     text-align: center;
-    margin-left: 45%;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -15%);
     &-border {
       z-index: 40;
       position: absolute;
@@ -69,9 +76,23 @@ export default {
     }
   }
   &__slider {
-    width: 95%;
-    margin: 40px auto 20px auto;
-    position: relative;
+    width: 600px;
+    position: absolute;
+    left: 49%;
+    top: 90%;
+    transform: translate(-49%, -90%);
+    @media screen and (max-width: @largetablet)  {
+      left: 50%;
+      top: 90%;
+      transform: translate(-50%, -90%);
+    }/*
+    @media screen and (max-width: 811px)  {
+      margin: 40px 5% 20px 5%;
+    }
+    @media screen and (max-width: 745px)  {
+      margin: 40px 1% 20px 1%;
+    }
+    position: relative;*/
     padding-top: 30px;
     &-photo {
       width: 147px;
@@ -88,6 +109,9 @@ export default {
         position: absolute;
         z-index: 30;
       }
+    }
+    &-list {
+      padding: 0;
     }
     &-first {
       top: 0;
@@ -121,9 +145,12 @@ export default {
       list-style: none;
       display: flex;
       align-items: center;
+      @media screen and (max-width: 620px)  {
+        flex-direction: column-reverse;
+      }
     }
     &-text {
-      width: 33.333%;
+      width: 32%;
       font-size: 18px;
       letter-spacing: 0px;
       color: @bodycolor;
@@ -152,12 +179,17 @@ export default {
     &-prev {
       .navbutton();
       transform: rotateZ(180deg);
-      margin-right: 20px;
-      margin-left: -35px;
+      position: absolute;
+      left: 43%;
+      top: 100%;
+      transform: translate(-43%, -100%);
     }
     &-next {
       .navbutton();
-      margin-left: 20px;
+      position: absolute;
+      left: 55%;
+      top: 100%;
+      transform: translate(-55%, -100%);
     }
   }
 }
