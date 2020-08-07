@@ -61,7 +61,13 @@ export default {
     height: 550px;
   }
   &__hexogon {
-    .hexogonicon(@itemactive, 74px, 86px);
+    .hexogonicon(@itemactive, 75px, 86px);
+    &:before {
+      top: -(86px / 4) + 1px;
+    }
+    &:after {
+      bottom: -(86px / 4) + 1px;
+    }
     text-align: center;
     position: absolute;
     left: 50%;
@@ -72,7 +78,7 @@ export default {
       position: absolute;
       top: -20px;
       left: 0;
-      .hexogonborder(lighten(@itemactive, 12%), 4px, 74px, 86px);
+      .hexogonborder(lighten(@itemactive, 12%), 5px, 75px, 86px);
     }
   }
   &__slider {
@@ -135,10 +141,10 @@ export default {
     }
     &-avatar {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 147px;
-      height: 170px;
+      top: 1px;
+      left: 1px;
+      width: 145px;
+      height: 168px;
       z-index: 5;
     }
     &-item {
@@ -178,11 +184,10 @@ export default {
     }
     &-prev {
       .navbutton();
-      transform: rotateZ(180deg);
       position: absolute;
       left: 43%;
       top: 100%;
-      transform: translate(-43%, -100%);
+      transform:  translate(-43%, -100%) rotateZ(180deg);
     }
     &-next {
       .navbutton();

@@ -139,10 +139,10 @@ export default {
     }
     &-avatar {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 147px;
-      height: 170px;
+      top: 1px;
+      left: 1px;
+      width: 145px;
+      height: 168px;
       z-index: 5;
     }
     &-firstname {

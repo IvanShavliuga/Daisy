@@ -92,24 +92,24 @@ export default {
   }
   &__steps {
     position: relative;
-    width: 800px;
     height: 700px;
-    margin: 50px auto;
-    @media screen  and (max-width: @desktop) {
+    margin: 50px 0;
+    @media screen and (min-width: @tablet) and (max-width: @desktop) {
       transform: scale(0.9);
-      margin: 20px auto;
-      height: 550px;
+      margin-left: 50px;
+      margin-right: 0;
     }
-    @media screen and (max-width: @tablet) {
-      transform: scale(0.8);
-      margin: 0;
-      margin-left: -50px;
-      width: 700px;
+    @media screen and (min-width: @phone) and (max-width: @tablet) {
+      transform: scale(0.9);
+      width: 400px;
+      margin-top: 50px;
+      margin-left: 10px;
+      margin-right: 0;
     }
     @media screen and (max-width: @largephone) {
-      transform: scale(0.7);
+      transform: scale(0.8);
       margin: 0;
-      margin-left: -50px;
+      margin-left: -10px;
     }
     &-img {
       position: absolute;
@@ -153,11 +153,26 @@ export default {
       height: 4px;
       z-index: 30;
       transform: rotateZ(90deg);
+      @media screen and (min-width: @phone) and (max-width: @tablet) {
+        display: none;
+      }
     }
+    /*@media screen and (max-width: 553px) {
+      left: -60px + 20px;
+      top: -100px;
+    }*/
   }
   &__step2 {
     left: 260px;
     top: 147px;
+    /*@media screen and (max-width: 553px) {
+      left: 195px + 20px;
+      top: -50px;
+    }*/
+    @media screen and (min-width: @phone) and (max-width: @tablet) {
+      left: 177px;
+      top: 97px;
+    }
     z-index: 20;
     i {
       padding-top: 8px;
@@ -173,6 +188,9 @@ export default {
       height: 4px;
       z-index: 30;
       transform: rotateZ(90deg);
+      @media screen and (min-width: @phone) and (max-width: @tablet) {
+        display: none;
+      }
     }
     div:first-child:after {
       height: 4px;
@@ -184,6 +202,10 @@ export default {
     left: 348px;
     top: -3px;
     z-index: 20;
+    @media screen and (min-width: @phone) and (max-width: @tablet) {
+      left: 265px;
+      top: -54px;
+    }
     div:first-child:after, div:first-child:before {
       height: 4px;
       background-color: @stepsline;
@@ -211,6 +233,11 @@ export default {
       z-index: 30;
       transform: rotateZ(90deg);
     }
+    /*@media screen and (max-width: 553px) {
+      left: 325px + 20px;
+      top: 75px;
+      z-index: 20;
+    }*/
   }
   &__step4 {
     position: absolute;
@@ -249,10 +276,19 @@ export default {
     }*/
     left: 348px + 174px;
     top: 70px;
-    @media screen and (max-width: @largetablet)  {
+    @media screen and (min-width: @phone) and (max-width: @tablet) {
+      left: 352px;
+      top: 69px;
+    }
+    @media screen and (min-width: @tablet)  and (max-width: @largetablet)  {
       left: 348px + 174px - 87px;
       top: 70px + 53px;
     }
+    /*@media screen and (max-width: 553px) {
+      left: 180px + 20px;
+      top: 215px;
+      z-index: 20;
+    }*/
     /*@media screen and (min-width: 801px) {*/
     i:last-child {
       top: 200px;
@@ -319,10 +355,14 @@ export default {
       z-index: 30;
     }
   }
+  &__step1, &__step2, &__step {
+    z-index: 30;
+  }
   &__photo {
     position: absolute;
     top: 239px;
     left: 47px;
+    z-index:1;
     background-image: url('../assets/images/steps.jpg');
     .hexogonimage(white, 262px, 302px);
     &:after {
@@ -335,7 +375,14 @@ export default {
       height: 4px;
       z-index: 30;
       transform: rotateZ(30.3deg);
+      @media screen and (min-width: @phone) and (max-width: @tablet) {
+        display: none;
+      }
     }
+    /*@media screen and (max-width: 553px) {
+      left: -20px + 20px;
+      top: 40px;
+    }*/
   }
   /*}*/
 }
