@@ -23,7 +23,7 @@
   padding: 80px 20px;
   @media screen and (max-width: @largetablet) {
     height: 350px;
-    padding: 80px 20px;
+    padding: 80px 0;
   }
   &__block {
     border: 8px solid rgba(99, 99, 99, 0.4);

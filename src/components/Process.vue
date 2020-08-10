@@ -1,5 +1,6 @@
 <template>
   <section class="process">
+    <div class="wrapper">
       <h2 class="process__title">
         Our
         <span class="process__title-lastword">process</span>
@@ -70,6 +71,7 @@
           <div></div>
         </div>
       </div>
+    </div>
   </section>
 </template>
 <script>
@@ -92,21 +94,18 @@ export default {
   }
   &__steps {
     position: relative;
-    height: 700px;
-    margin: 50px 0;
+    width: 70%;
+    margin: 30px auto;
     @media screen and (min-width: @tablet) and (max-width: @desktop) {
-      transform: scale(0.9);
-      margin-left: 50px;
-      margin-right: 0;
-    }
-    @media screen and (min-width: @phone) and (max-width: @tablet) {
-      transform: scale(0.9);
-      width: 400px;
-      margin-top: 50px;
+      transform: scale(0.8);
       margin-left: 10px;
       margin-right: 0;
     }
-    @media screen and (max-width: @largephone) {
+    @media screen and (min-width: @largephone) and (max-width: @tablet) {
+      transform: scale(0.75);
+      margin: 50px 2%;
+    }
+    @media screen and (min-width: @phone) and (max-width: @largephone) {
       transform: scale(0.8);
       margin: 0;
       margin-left: -10px;
@@ -129,9 +128,13 @@ export default {
     .hexogontext(@paragraphcolor, 174px, 201px);
   }
   &__step1 {
-    left: 5px;
+    left: -5px;
     top: 101px;
     z-index: 20;
+    @media screen and (max-width: 695px) {
+      top: -55px;
+      left: -20px;
+    }
     div:nth-child(2) {
       border-right: none;
     }
@@ -165,11 +168,15 @@ export default {
   &__step2 {
     left: 260px;
     top: 147px;
+    @media screen and (max-width: 695px) {
+      top: -50px;
+      left: 145px;
+    }
     /*@media screen and (max-width: 553px) {
       left: 195px + 20px;
       top: -50px;
     }*/
-    @media screen and (min-width: @phone) and (max-width: @tablet) {
+    @media screen and (min-width: 695px) and (max-width: @tablet) {
       left: 177px;
       top: 97px;
     }
@@ -202,7 +209,11 @@ export default {
     left: 348px;
     top: -3px;
     z-index: 20;
-    @media screen and (min-width: @phone) and (max-width: @tablet) {
+    @media screen and (max-width: 695px) {
+      top: 75px;
+      left: 275px;
+    }
+    @media screen and (min-width: 695px) and (max-width: @tablet) {
       left: 265px;
       top: -54px;
     }
@@ -276,7 +287,12 @@ export default {
     }*/
     left: 348px + 174px;
     top: 70px;
-    @media screen and (min-width: @phone) and (max-width: @tablet) {
+    z-index: 20;
+    @media screen and (max-width: 695px) {
+      top: 264px;
+      left: 216px;
+    }
+    @media screen and (min-width: 695px) and (max-width: @tablet) {
       left: 352px;
       top: 69px;
     }
@@ -310,6 +326,11 @@ export default {
         left: 80px;
         top: 10px;
         width: 55px;
+      }
+      @media screen and (max-width: 695px) {
+        top: 302px / 9 - 18px;
+        left: 55px;
+        width: 82px;
       }
     }
     div:first-child:before {
@@ -365,6 +386,10 @@ export default {
     z-index:1;
     background-image: url('../assets/images/steps.jpg');
     .hexogonimage(white, 262px, 302px);
+    @media screen and (max-width: 695px) {
+      top: 90px;
+      left: 17px;
+    }
     &:after {
       content: ' ';
       position: absolute;

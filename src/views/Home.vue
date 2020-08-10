@@ -1,5 +1,5 @@
 <template>
-<main>
+<div>
   <Header/>
   <Receive/>
   <Expand/>
@@ -11,17 +11,9 @@
   <Team/>
   <Clients/>
   <Footer/>
-</main>
+</div>
 </template>
 <style>
-main {
-  margin: 0;
-  padding: 0;
-  /*border-right: 2px solid blue;
-}
-section {
-  border-right: 2px solid red;*/
-}
 </style>
 <script>
 // @ is an alias to /src
