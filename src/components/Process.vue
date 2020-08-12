@@ -1,5 +1,6 @@
 <template>
   <section class="process">
+    <div class="wrapper">
       <h2 class="process__title">
         Our
         <span class="process__title-lastword">process</span>
@@ -70,6 +71,7 @@
           <div></div>
         </div>
       </div>
+    </div>
   </section>
 </template>
 <script>
@@ -92,21 +94,18 @@ export default {
   }
   &__steps {
     position: relative;
-    height: 700px;
-    margin: 50px 0;
+    width: 70%;
+    margin: 30px auto;
     @media screen and (min-width: @tablet) and (max-width: @desktop) {
-      transform: scale(0.9);
-      margin-left: 50px;
-      margin-right: 0;
-    }
-    @media screen and (min-width: @phone) and (max-width: @tablet) {
-      transform: scale(0.9);
-      width: 400px;
-      margin-top: 50px;
+      transform: scale(0.8);
       margin-left: 10px;
       margin-right: 0;
     }
-    @media screen and (max-width: @largephone) {
+    @media screen and (min-width: @largephone) and (max-width: @tablet) {
+      transform: scale(0.75);
+      margin: 50px 2%;
+    }
+    @media screen and (min-width: @phone) and (max-width: @largephone) {
       transform: scale(0.8);
       margin: 0;
       margin-left: -10px;
@@ -115,7 +114,7 @@ export default {
       position: absolute;
       top: -15px;
       left: -15px;
-      z-index: 40;
+      z-index: 50;
       background-color: @stepsline;
       border-radius: 50%;
       width: 34px;
@@ -129,14 +128,21 @@ export default {
     .hexogontext(@paragraphcolor, 174px, 201px);
   }
   &__step1 {
-    left: 5px;
+    left: 2px;
     top: 101px;
     z-index: 20;
-    div:nth-child(2) {
-      border-right: none;
+    @media screen  and (min-width: @tablet) {
+      left: 7px;
     }
+    @media screen and (max-width: 695px) {
+      top: -38px;
+      left: 166px;
+    }
+
     div:last-child:before {
-      display: none;
+      @media screen and (min-width: 696px) {
+        display: none;
+      }
     }
     div:first-child:after, div:first-child:before {
       height: 4px;
@@ -153,7 +159,7 @@ export default {
       height: 4px;
       z-index: 30;
       transform: rotateZ(90deg);
-      @media screen and (min-width: @phone) and (max-width: @tablet) {
+      @media screen and (min-width: 696px) and (max-width: @tablet) {
         display: none;
       }
     }
@@ -165,62 +171,127 @@ export default {
   &__step2 {
     left: 260px;
     top: 147px;
+    @media screen and (max-width: 695px) {
+      top: 100px;
+      left: 276px;
+    }
     /*@media screen and (max-width: 553px) {
       left: 195px + 20px;
       top: -50px;
     }*/
-    @media screen and (min-width: @phone) and (max-width: @tablet) {
+    @media screen and (min-width: 695px) and (max-width: @tablet) {
       left: 177px;
       top: 97px;
     }
     z-index: 20;
-    i {
-      padding-top: 8px;
-      height: 28px;
+    i:last-child {
+      @media screen and (max-width: 695px) {
+        top: -68px;
+        left: 52px;
+      }
     }
     div:nth-child(2):after {
-      content: ' ';
-      position: absolute;
-      top: 49px;
-      left: -51px;
-      background-color: @stepsline;
-      width: 101px;
-      height: 4px;
-      z-index: 30;
-      transform: rotateZ(90deg);
-      @media screen and (min-width: @phone) and (max-width: @tablet) {
+      @media screen and (min-width: @tablet) {
+        content: ' ';
+        position: absolute;
+        top: 49px;
+        left: -51px;
+        background-color: @stepsline;
+        width: 101px;
+        height: 4px;
+        z-index: 30;
+        transform: rotateZ(90deg);
+      }
+      @media screen and (min-width: 696px) and (max-width: @tablet) {
         display: none;
       }
     }
+    div:nth-child(2):after {
+      @media screen and (max-width: 695px) {
+        content: ' ';
+        position: absolute;
+        top: 50px;
+        right: -51px;
+        background-color: @stepsline;
+        width: 103px;
+        height: 4px;
+        z-index: 30;
+        transform: rotateZ(90deg);
+      }
+    }
+    div:first-child:before {
+      @media screen and (max-width: 695px) {
+        height: 4px;
+        background-color: @stepsline;
+        width: 208px / 2 ;
+      }
+    }
     div:first-child:after {
-      height: 4px;
-      background-color: @stepsline;
-      width: 208px / 2 ;
+      @media screen and (min-width: 696px) {
+        height: 4px;
+        background-color: @stepsline;
+        width: 208px / 2 ;
+        z-index: 20;
+      }
+    }
+    div:last-child:before {
+      @media screen and (max-width: 695px) {
+        height: 4px;
+        background-color: @stepsline;
+        width: 201px / 2.5 ;
+        top: 20px;
+        z-index: 20;
+      }
     }
   }
   &__step3 {
     left: 348px;
     top: -3px;
     z-index: 20;
-    @media screen and (min-width: @phone) and (max-width: @tablet) {
+    @media screen and (max-width: 695px) {
+      top: 280px;
+      left: 240px;
+    }
+    @media screen and (min-width: 695px) and (max-width: @tablet) {
       left: 265px;
       top: -54px;
     }
+    i:last-child {
+      z-index: 50;
+      @media screen and (max-width: 695px) {
+        top: -48px;
+        left: 112px;
+      }
+    }
     div:first-child:after, div:first-child:before {
-      height: 4px;
-      background-color: @stepsline;
-      width: 201px / 2 ;
+      @media screen and (min-width: 696px) {
+        height: 4px;
+        background-color: @stepsline;
+        width: 201px / 2 ;
+      }
+    }
+    div:first-child:before {
+      @media screen and (max-width: 695px) {
+        height: 4px;
+        background-color: @stepsline;
+        width: 201px / 4.8 ;
+        right: -5px;
+        top: 40px;
+        z-index: 20;
+      }
     }
     div:nth-child(2):after {
-      content: ' ';
-      position: absolute;
-      top: 49px;
-      left: -51px;
-      background-color: @stepsline;
-      width: 104px;
-      height: 4px;
-      z-index: 30;
-      transform: rotateZ(90deg);
+      @media screen and (min-width: 696px) {
+        content: ' ';
+        position: absolute;
+        top: 49px;
+        left: -51px;
+        background-color: @stepsline;
+        width: 104px;
+        height: 4px;
+        z-index: 30;
+        transform: rotateZ(90deg);
+      }
     }
     div:nth-child(2):before {
       content: ' ';
@@ -232,6 +303,23 @@ export default {
       height: 4px;
       z-index: 30;
       transform: rotateZ(90deg);
+    }
+    div:last-child:before {
+      @media screen and (max-width: 695px) {
+        height: 4px;
+        background-color: @stepsline;
+        width: 201px / 2 ;
+      }
+    }
+    div:last-child:after {
+      @media screen and (max-width: 695px) {
+        height: 4px;
+        background-color: @stepsline;
+        width: 201px / 2.8 ;
+        left: 22px;
+        top: 30px;
+        z-index: 20;
+      }
     }
     /*@media screen and (max-width: 553px) {
       left: 325px + 20px;
@@ -276,7 +364,12 @@ export default {
     }*/
     left: 348px + 174px;
     top: 70px;
-    @media screen and (min-width: @phone) and (max-width: @tablet) {
+    z-index: 20;
+    @media screen and (max-width: 695px) {
+      top: 377px;
+      left: 16px;
+    }
+    @media screen and (min-width: 695px) and (max-width: @tablet) {
       left: 352px;
       top: 69px;
     }
@@ -299,17 +392,26 @@ export default {
       border: 3px solid @stepsline;
     }
     div:first-child:after, div:first-child:before {
-      height: 4px;
-      background-color: @stepsline;
-      width: 262px / 1.7;
+      @media screen and (min-width: 696px) {
+        height: 4px;
+        background-color: @stepsline;
+        width: 262px / 1.7;
+      }
     }
     div:first-child:after {
-      top: 302px / 9 + 3px;
-      left: -11px;
+      @media screen and (min-width: 696px) {
+        top: 302px / 9 + 3px;
+        left: -11px;
+      }
       @media screen and (max-width: @largetablet)  {
         left: 80px;
         top: 10px;
         width: 55px;
+      }
+      @media screen and (max-width: 695px) {
+        top: 302px / 9 + 3px;
+        left: -11px;
+        width: 262px / 1.7;
       }
     }
     div:first-child:before {
@@ -330,6 +432,10 @@ export default {
           left: 70px;
           top: -70px;
         }
+        @media screen and (max-width: 695px) {
+          top: -13px;
+          left: 245px;
+        }
       }
     }
     div:nth-child(2):before {
@@ -348,6 +454,7 @@ export default {
       left: -10px;
     }
     div:last-child:before {
+
       top: 302px / 9  + 4px;
       right: -10px;
       background-color: @stepsline;
@@ -365,6 +472,10 @@ export default {
     z-index:1;
     background-image: url('../assets/images/steps.jpg');
     .hexogonimage(white, 262px, 302px);
+    @media screen and (max-width: 695px) {
+      top: 90px;
+      left: 17px;
+    }
     &:after {
       content: ' ';
       position: absolute;

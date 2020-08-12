@@ -57,7 +57,7 @@ export default {
   margin: 0;
   padding-top: 80px;
   position: relative;
-  @media screen and (max-width: 620px)  {
+  @media screen and (max-width: 749px)  {
     height: 550px;
   }
   &__hexogon {
@@ -151,7 +151,7 @@ export default {
       list-style: none;
       display: flex;
       align-items: center;
-      @media screen and (max-width: 620px)  {
+      @media screen and (max-width: 749px)  {
         flex-direction: column-reverse;
       }
     }

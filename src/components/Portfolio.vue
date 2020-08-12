@@ -57,8 +57,8 @@ export default {
 </script>
 <style lang="less">
 .portfolio {
-  margin: 0 auto;
-  padding: 40px 20px 40px 20px;
+  margin: 0;
+  padding: 40px 0 40px 0;
   .headersection();
   &__title {
     width: 165px;
@@ -67,12 +67,12 @@ export default {
     border-top: 1px solid @bodycolor;
     border-bottom: 1px solid @bodycolor;
     padding: 5px 0;
-    width: 100%;
-    margin: 50px 0;
+    width: 95%;
+    margin: 50px auto;
     &-list {
       display: flex;
-      justify-content: space-between;
-      padding: 0 25px;
+      justify-content: center;
+      padding: 0 15px;
       @media screen and (max-width: 850px) {
         justify-content: center;
         flex-wrap: wrap;
@@ -89,6 +89,8 @@ export default {
       font-family: @bodyfont;
       text-align: center;
       text-transform: uppercase;
+      padding: 0 10px;
+      margin: 0;
       @media screen and (max-width: @largetablet) {
         padding-left: 10px;
         padding-right: 10px;
@@ -100,8 +102,8 @@ export default {
       &:after {
         content: '/';
         color: @bodycolor;
-        padding-left: 60px;
-        @media screen and (max-width: @largetablet) {
+        padding-left: 20px;
+        /*@media screen and (max-width: @largetablet) {
           padding-left: 30px;
           padding-right: 10px;
         }
@@ -111,7 +113,7 @@ export default {
         }
         @media screen and (max-width: 772px) {
           display: none;
-        }
+        }*/
         font-size: 20px;
         font-size: bold;
       }
@@ -127,8 +129,11 @@ export default {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    width: 100%;
-    margin: 50px 0;
+    width: 95%;
+    margin: 50px auto;
+    @media screen and (max-width: 749px)  {
+      width: 80%;
+    }
     &-item {
       list-style: none;
       position: relative;
