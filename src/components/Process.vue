@@ -87,6 +87,9 @@ export default {
   @media screen  and (max-width: @desktop) {
     height: 741px;
   }
+  @media screen  and (max-width: 599px) {
+    height: 841px;
+  }
   .headersection();
   &__title {
     width: 190px;
@@ -108,6 +111,7 @@ export default {
     @media screen and (min-width: @phone) and (max-width: @largephone) {
       transform: scale(0.8);
       margin: 0;
+      margin-top: 110px;
       margin-left: -10px;
     }
     &-img {

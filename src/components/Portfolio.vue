@@ -69,6 +69,9 @@ export default {
     padding: 5px 0;
     width: 95%;
     margin: 50px auto;
+    @media screen and (max-width: 695px) {
+      width: 80%;
+    }
     &-list {
       display: flex;
       justify-content: center;
@@ -77,6 +80,9 @@ export default {
         justify-content: center;
         flex-wrap: wrap;
         padding: 0;
+      }
+      @media screen and (max-width: 695px) {
+        flex-direction: column;
       }
     }
     &-item {
@@ -103,6 +109,9 @@ export default {
         content: '/';
         color: @bodycolor;
         padding-left: 20px;
+        @media screen and (max-width: 695px) {
+          display: none;
+        }
         /*@media screen and (max-width: @largetablet) {
           padding-left: 30px;
           padding-right: 10px;
@@ -145,8 +154,14 @@ export default {
           @media screen and (max-width: 1325px) {
             width: 355px;
           }
+          @media screen and (max-width: 1021px) {
+            width: 210px;
+          }
+          @media screen and (max-width: 949px) {
+            width: 210px;
+          }
           @media screen and (max-width: 954px) {
-            width: 285px;
+            width: 210px;
           }
           /*@media screen and (max-width: 1147px) {
             width: 245px;
@@ -161,6 +176,10 @@ export default {
             width: 180px;
             height: 180px;
           }
+          @media screen and (max-width: 612px) {
+            width: 250px;
+            height: 250px;
+          }
         }
       }
       &:first-child, &nth-child(4) {
@@ -172,6 +191,9 @@ export default {
       .portfolio__block-img, .portfolio__block-hover {
         width: 245px;
         height: 212px;
+        @media screen and (max-width: 1021px) {
+          width: 210px;
+        }
         @media screen and (max-width: 1109px) {
           width: 210px;
         }
@@ -181,6 +203,10 @@ export default {
         @media screen and (max-width: 793px) {
           width: 180px;
           height: 180px;
+        }
+        @media screen and (max-width: 612px) {
+          width: 250px;
+          height: 250px;
         }
       }
     }
