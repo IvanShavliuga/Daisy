@@ -60,9 +60,6 @@ export default {
   background-image: url('../assets/images/header.jpg');
   background-repeat: no-repeat;
   background-size: 100% 99.9%;
-  @media screen and (max-width: @largetablet) {
-    height: 549px;
-  }
   &__topline {
     display: flex;
     justify-content: space-between;
@@ -92,6 +89,10 @@ export default {
     &-list {
       display: flex;
       justify-content: flex-end;
+      @media screen and (max-width: 520px) {
+        flex-direction: column;
+        justify-content: center;
+      }
       @media screen and (max-width: @tablet) {
         justify-content: space-between;
       }
@@ -112,6 +113,10 @@ export default {
     .active {
       color: @itemactive;
       border-bottom: 3px solid @itemactive;
+      @media screen and (max-width: 695px) {
+        border-bottom: none;
+        font-weight: bold;
+      }
     }
   }
   &__block {
@@ -159,6 +164,12 @@ export default {
       font-family: @bodyfont;
       text-align: center;
       margin-top: 20px;
+      @media screen and (max-width: 695px) {
+        margin-top: 40px;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 20px;
+      }
     }
     &-button {
       .buttontransparent();

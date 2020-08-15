@@ -5,9 +5,8 @@
 
 body {
   margin: 0;
-  padding: 0;
-  width: 100%;
-  //border-right: 2px dotted purple;
+  padding: 0 auto;
+  width: initial;
 }
 html {
   margin: 0;
@@ -17,19 +16,19 @@ html {
   background-color: #000;
 }
 section {
-  border-right: 2px solid red;
-  margin: 0 auto;
+  margin: 1px;
+  padding: 1px;
+  width: 100%;
 }
 .container {
   margin: 0;
   padding: 0;
   border: 1px dotted #df67df;
 }
-main{
-  margin: 0;
-  padding: 0;
+main, #app{
+  margin: 1px;
+  padding: 1px;
   width: 100%;
-  border-right: 2px solid blue;
 }
 .wrapper {
   width: 85%;
@@ -40,5 +39,9 @@ main{
   @media screen and (max-width: @tablet) {
     width: 80%;
     margin: 0 auto;
+  }
+  @media screen and (max-width: 520px) {
+    width: 100%;
+    margin: 0;
   }
 }

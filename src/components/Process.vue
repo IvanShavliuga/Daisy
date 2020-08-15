@@ -90,6 +90,9 @@ export default {
   @media screen  and (max-width: 599px) {
     height: 841px;
   }
+  @media screen and (max-width: 695px) {
+    height: 920px;
+  }
   .headersection();
   &__title {
     width: 190px;
@@ -110,9 +113,7 @@ export default {
     }
     @media screen and (min-width: @phone) and (max-width: @largephone) {
       transform: scale(0.8);
-      margin: 0;
-      margin-top: 110px;
-      margin-left: -10px;
+      margin: 110px 0 10px -10px;
     }
     &-img {
       position: absolute;
@@ -138,11 +139,13 @@ export default {
     @media screen  and (min-width: @tablet) {
       left: 7px;
     }
-    @media screen and (max-width: 695px) {
+    @media screen and (max-width: 696px) {
       top: -38px;
       left: 166px;
     }
-
+    @media screen and (max-width: 520px) {
+      left: 85px;
+    }
     div:last-child:before {
       @media screen and (min-width: 696px) {
         display: none;
@@ -183,9 +186,13 @@ export default {
       left: 195px + 20px;
       top: -50px;
     }*/
-    @media screen and (min-width: 695px) and (max-width: @tablet) {
+    @media screen and (min-width: 696px) and (max-width: @tablet) {
       left: 177px;
       top: 97px;
+    }
+    @media screen and (max-width: 520px) {
+      left: 183px;
+      top: 107px;
     }
     z-index: 20;
     i:last-child {
@@ -256,9 +263,13 @@ export default {
       top: 280px;
       left: 240px;
     }
-    @media screen and (min-width: 695px) and (max-width: @tablet) {
+    @media screen and (min-width: 696px) and (max-width: @tablet) {
       left: 265px;
       top: -54px;
+    }
+    @media screen and (max-width: 520px) {
+      left: 153px;
+      top: 294px;
     }
     i:last-child {
       z-index: 50;
@@ -316,7 +327,7 @@ export default {
       }
     }
     div:last-child:after {
-      @media screen and (max-width: 695px) {
+      @media screen and (min-width: 520px)  and (max-width: 695px) {
         height: 4px;
         background-color: @stepsline;
         width: 201px / 2.8 ;
@@ -369,17 +380,27 @@ export default {
     left: 348px + 174px;
     top: 70px;
     z-index: 20;
-    @media screen and (max-width: 695px) {
-      top: 377px;
-      left: 16px;
+    @media screen and (min-width: 696px) and (max-width: @tablet) {
+      left: 348px + 90px - 87px;
+      top: 70px;
     }
-    @media screen and (min-width: 695px) and (max-width: @tablet) {
-      left: 352px;
-      top: 69px;
-    }
-    @media screen and (min-width: @tablet)  and (max-width: @largetablet)  {
+    @media screen and (min-width: @tablet) and (max-width: 831px) {
+      /*left: 352px;
+      top: 69px;*/
       left: 348px + 174px - 87px;
       top: 70px + 53px;
+    }
+    /*@media screen and (min-width: @tablet)  and (max-width: @largetablet)  {
+      left: 348px + 174px - 87px;
+      top: 70px + 53px;
+    }*/
+    @media screen and (max-width: 695px) {
+      top: 367px;
+      left: -8px;
+    }
+    @media screen and (max-width: 522px) {
+      top: 423px;
+      left: -16px;
     }
     /*@media screen and (max-width: 553px) {
       left: 180px + 20px;
@@ -396,18 +417,16 @@ export default {
       border: 3px solid @stepsline;
     }
     div:first-child:after, div:first-child:before {
-      @media screen and (min-width: 696px) {
-        height: 4px;
-        background-color: @stepsline;
-        width: 262px / 1.7;
-      }
+      //@media screen and (min-width: 696px) {
+      height: 4px;
+      background-color: @stepsline;
+      width: 262px / 1.7;
+      //}
     }
     div:first-child:after {
-      @media screen and (min-width: 696px) {
-        top: 302px / 9 + 3px;
-        left: -11px;
-      }
-      @media screen and (max-width: @largetablet)  {
+      top: 302px / 9 + 3px;
+      left: -11px;
+      @media screen and (max-width: 831px)  {
         left: 80px;
         top: 10px;
         width: 55px;
@@ -432,7 +451,7 @@ export default {
         left: 60px;
       }
       .stepimg4 {
-        @media screen and (max-width: @largetablet)  {
+        @media screen and (max-width: 831px)  {
           left: 70px;
           top: -70px;
         }
@@ -458,7 +477,6 @@ export default {
       left: -10px;
     }
     div:last-child:before {
-
       top: 302px / 9  + 4px;
       right: -10px;
       background-color: @stepsline;
@@ -476,6 +494,9 @@ export default {
     z-index:1;
     background-image: url('../assets/images/steps.jpg');
     .hexogonimage(white, 262px, 302px);
+    @media screen and (max-width: 520px) {
+      display: none;
+    }
     @media screen and (max-width: 695px) {
       top: 90px;
       left: 17px;
