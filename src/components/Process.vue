@@ -170,10 +170,6 @@ export default {
         display: none;
       }
     }
-    /*@media screen and (max-width: 553px) {
-      left: -60px + 20px;
-      top: -100px;
-    }*/
   }
   &__step2 {
     left: 260px;
@@ -182,10 +178,6 @@ export default {
       top: 100px;
       left: 276px;
     }
-    /*@media screen and (max-width: 553px) {
-      left: 195px + 20px;
-      top: -50px;
-    }*/
     @media screen and (min-width: 696px) and (max-width: @tablet) {
       left: 177px;
       top: 97px;
@@ -286,7 +278,7 @@ export default {
       }
     }
     div:first-child:before {
-      @media screen and (max-width: 695px) {
+      @media screen  and (max-width: 695px) {
         height: 4px;
         background-color: @stepsline;
         width: 201px / 4.8 ;
@@ -336,47 +328,10 @@ export default {
         z-index: 20;
       }
     }
-    /*@media screen and (max-width: 553px) {
-      left: 325px + 20px;
-      top: 75px;
-      z-index: 20;
-    }*/
   }
   &__step4 {
     position: absolute;
     .hexogontext(@paragraphcolor, 262px, 302px);
-    /*@media screen and (max-width: 800px) {
-      .hexogontext(@paragraphcolor, 174px, 201px);
-      left: 348px + 174px - 87px;
-      top: 70px + 83px;
-      div:first-child:after, div:first-child:before {
-        height: 4px;
-        background-color: @stepsline;
-        width: 201px / 2 ;
-      }
-      div:nth-child(2):after {
-        content: ' ';
-        position: absolute;
-        top: 49px;
-        left: -51px;
-        background-color: @stepsline;
-        width: 104px;
-        height: 4px;
-        z-index: 30;
-        transform: rotateZ(90deg);
-      }
-      div:nth-child(2):before {
-        content: ' ';
-        position: absolute;
-        top: 50px;
-        right: -51px;
-        background-color: @stepsline;
-        width: 103px;
-        height: 4px;
-        z-index: 30;
-        transform: rotateZ(90deg);
-      }
-    }*/
     left: 348px + 174px;
     top: 70px;
     z-index: 20;
@@ -385,29 +340,17 @@ export default {
       top: 70px;
     }
     @media screen and (min-width: @tablet) and (max-width: 831px) {
-      /*left: 352px;
-      top: 69px;*/
       left: 348px + 174px - 87px;
       top: 70px + 53px;
     }
-    /*@media screen and (min-width: @tablet)  and (max-width: @largetablet)  {
-      left: 348px + 174px - 87px;
-      top: 70px + 53px;
-    }*/
     @media screen and (max-width: 695px) {
       top: 367px;
       left: -8px;
     }
-    @media screen and (max-width: 522px) {
+    @media screen and (max-width: 520px) {
       top: 423px;
       left: -16px;
     }
-    /*@media screen and (max-width: 553px) {
-      left: 180px + 20px;
-      top: 215px;
-      z-index: 20;
-    }*/
-    /*@media screen and (min-width: 801px) {*/
     i:last-child {
       top: 200px;
       left: 110px;
@@ -417,11 +360,11 @@ export default {
       border: 3px solid @stepsline;
     }
     div:first-child:after, div:first-child:before {
-      //@media screen and (min-width: 696px) {
-      height: 4px;
-      background-color: @stepsline;
-      width: 262px / 1.7;
-      //}
+      @media screen and (min-width: 696px) {
+        height: 4px;
+        background-color: @stepsline;
+        width: 262px / 1.7;
+      }
     }
     div:first-child:after {
       top: 302px / 9 + 3px;
@@ -515,11 +458,6 @@ export default {
         display: none;
       }
     }
-    /*@media screen and (max-width: 553px) {
-      left: -20px + 20px;
-      top: 40px;
-    }*/
   }
-  /*}*/
 }
 </style>
