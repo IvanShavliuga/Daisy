@@ -2,9 +2,7 @@
 Daisy. Template web-studio.
 
 Demo:
-```
 <a href="https://ivanshavliuga.github.io/daisy/index.html"> Link on demo </a>
-```
 
 PSD maket:
 ```
