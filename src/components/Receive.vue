@@ -81,6 +81,9 @@ export default {
   }
   &__block {
     margin-top: 100px;
+    @media screen and (max-width: 370px) {
+      margin-top: 130px;
+    }
     &-list {
       display: flex;
       justify-content: space-between;

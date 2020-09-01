@@ -302,6 +302,14 @@
     &-lastword {
       color: @itemactive;
     }
+    @media screen and (max-width: 420px) {
+      font-size: 26px;
+      margin-left: 10px;
+      width: 300px;
+    }
+    @media screen and (max-width: 370px) {
+      width: 220px!important;
+    }
   }
   &__subtitle {
     font-family: @bodyfont;
@@ -315,10 +323,19 @@
     text-align: center;
     width: 490px;
     margin: 20px auto;
+    @media screen  and (max-width: 599px) {
+      width: 300px;
+    }
+    @media screen and (max-width: 375px) {
+      width: 220px!important;
+    }
   }
 }
 
 .textleftsection {
+  &:first-child, &:last-child {
+
+  }
   &__block {
     @media screen and (max-width: @largetablet) {
       flex-direction: column-reverse;
@@ -347,6 +364,9 @@
       margin-bottom: 20px;
       margin-left: 20px;
       margin-top: 10px;
+      @media screen and (max-width: 400px) {
+        font-size: 20px;
+      }
       &:before {
         content: ' ';
         position: absolute;
@@ -383,6 +403,11 @@
       font-family: @bodyfont;
       text-align: center;
       margin-top: 15px;
+      @media screen and (max-width: 240px) {
+        width: 147px;
+        height: 44px;
+        font-size: 16px;
+      }
     }
   }
 }
@@ -396,6 +421,9 @@
   position: relative;
   width: 750px;
   margin: 200px auto 10px auto;
+  @media screen and (max-width: 600px) {
+    width: 500px;
+  }
   @media screen and (max-width: @largetablet) {
     width: 600px;
     font-size: 40px;
@@ -410,6 +438,11 @@
     font-size: 30px;
     text-wrap: wrap;
     text-align: center;
+  }
+  @media screen and (max-width: 460px) {
+    font-size: 26px;
+    margin-left: 10px;
+    width: auto;
   }
 }
 .logobrand {

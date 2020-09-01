@@ -18,11 +18,11 @@
             <li class="header__topline-item">contact</li>
           </ul>
         </nav>
-        <div class="header__topline-burger" @click="showmenu=!showmenu">
+        <!--<div class="header__topline-burger" @click="showmenu=!showmenu">
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </div>-->
       </div>
       <div class="header__block">
         <h1 class="header__block-title">
@@ -54,15 +54,11 @@ export default {
 </script>
 <style scoped lang="less">
 .header {
-  width: 100%;
   height: 849px;
   margin: 0;
   background-image: url('../assets/images/header.jpg');
   background-repeat: no-repeat;
   background-size: 100% 99.9%;
-  @media screen and (max-width: @largetablet) {
-    height: 549px;
-  }
   &__topline {
     display: flex;
     justify-content: space-between;
@@ -82,6 +78,14 @@ export default {
       @media screen and (max-width: @tablet) {
         justify-content: center;
       }
+      @media screen and (max-width: 277px) {
+        flex-wrap: wrap;
+      }
+    }
+    &-brand {
+      @media screen and (max-width: 277px) {
+        margin-top: 40px;
+      }
     }
     &-menu {
       flex-grow: 1;
@@ -92,6 +96,10 @@ export default {
     &-list {
       display: flex;
       justify-content: flex-end;
+      @media screen and (max-width: 520px) {
+        flex-direction: column;
+        justify-content: center;
+      }
       @media screen and (max-width: @tablet) {
         justify-content: space-between;
       }
@@ -106,12 +114,16 @@ export default {
       line-height: 36px;
       font-family: @bodyfont;
       @media screen and (max-width: @tablet) {
-        margin: 0 25px 5px 0;
+        margin: 0 15px 5px -5px;
       }
     }
     .active {
       color: @itemactive;
       border-bottom: 3px solid @itemactive;
+      @media screen and (max-width: 695px) {
+        border-bottom: none;
+        font-weight: bold;
+      }
     }
   }
   &__block {
@@ -129,7 +141,7 @@ export default {
         @media screen and (max-width: @largetablet) {
           width: 50px;
         }
-        @media screen and (max-width: @tablet) {
+        @media screen and (max-width: 901px) {
           display: none;
         }
       }
@@ -159,6 +171,12 @@ export default {
       font-family: @bodyfont;
       text-align: center;
       margin-top: 20px;
+      @media screen and (max-width: 695px) {
+        margin-top: 40px;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 20px;
+      }
     }
     &-button {
       .buttontransparent();

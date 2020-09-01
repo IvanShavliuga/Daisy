@@ -87,6 +87,12 @@ export default {
   @media screen  and (max-width: @desktop) {
     height: 741px;
   }
+  @media screen  and (max-width: 599px) {
+    height: 841px;
+  }
+  @media screen and (max-width: 695px) {
+    height: 920px;
+  }
   .headersection();
   &__title {
     width: 190px;
@@ -107,8 +113,15 @@ export default {
     }
     @media screen and (min-width: @phone) and (max-width: @largephone) {
       transform: scale(0.8);
-      margin: 0;
-      margin-left: -10px;
+      margin: 110px 0 10px -10px;
+    }
+    @media screen and (max-width: 399px) {
+      transform: scale(0.7);
+      margin: 110px 0 -10px -20px;
+    }
+    @media screen and (max-width: 275px) {
+      transform: scale(0.65);
+      margin: 110px 0 -10px -40px;
     }
     &-img {
       position: absolute;
@@ -134,11 +147,13 @@ export default {
     @media screen  and (min-width: @tablet) {
       left: 7px;
     }
-    @media screen and (max-width: 695px) {
+    @media screen and (max-width: 696px) {
       top: -38px;
       left: 166px;
     }
-
+    @media screen and (max-width: 520px) {
+      left: 85px;
+    }
     div:last-child:before {
       @media screen and (min-width: 696px) {
         display: none;
@@ -163,10 +178,6 @@ export default {
         display: none;
       }
     }
-    /*@media screen and (max-width: 553px) {
-      left: -60px + 20px;
-      top: -100px;
-    }*/
   }
   &__step2 {
     left: 260px;
@@ -175,13 +186,13 @@ export default {
       top: 100px;
       left: 276px;
     }
-    /*@media screen and (max-width: 553px) {
-      left: 195px + 20px;
-      top: -50px;
-    }*/
-    @media screen and (min-width: 695px) and (max-width: @tablet) {
+    @media screen and (min-width: 696px) and (max-width: @tablet) {
       left: 177px;
       top: 97px;
+    }
+    @media screen and (max-width: 520px) {
+      left: 183px;
+      top: 107px;
     }
     z-index: 20;
     i:last-child {
@@ -252,9 +263,13 @@ export default {
       top: 280px;
       left: 240px;
     }
-    @media screen and (min-width: 695px) and (max-width: @tablet) {
+    @media screen and (min-width: 696px) and (max-width: @tablet) {
       left: 265px;
       top: -54px;
+    }
+    @media screen and (max-width: 520px) {
+      left: 153px;
+      top: 294px;
     }
     i:last-child {
       z-index: 50;
@@ -271,7 +286,7 @@ export default {
       }
     }
     div:first-child:before {
-      @media screen and (max-width: 695px) {
+      @media screen  and (max-width: 695px) {
         height: 4px;
         background-color: @stepsline;
         width: 201px / 4.8 ;
@@ -312,7 +327,7 @@ export default {
       }
     }
     div:last-child:after {
-      @media screen and (max-width: 695px) {
+      @media screen and (min-width: 520px)  and (max-width: 695px) {
         height: 4px;
         background-color: @stepsline;
         width: 201px / 2.8 ;
@@ -321,68 +336,29 @@ export default {
         z-index: 20;
       }
     }
-    /*@media screen and (max-width: 553px) {
-      left: 325px + 20px;
-      top: 75px;
-      z-index: 20;
-    }*/
   }
   &__step4 {
     position: absolute;
     .hexogontext(@paragraphcolor, 262px, 302px);
-    /*@media screen and (max-width: 800px) {
-      .hexogontext(@paragraphcolor, 174px, 201px);
-      left: 348px + 174px - 87px;
-      top: 70px + 83px;
-      div:first-child:after, div:first-child:before {
-        height: 4px;
-        background-color: @stepsline;
-        width: 201px / 2 ;
-      }
-      div:nth-child(2):after {
-        content: ' ';
-        position: absolute;
-        top: 49px;
-        left: -51px;
-        background-color: @stepsline;
-        width: 104px;
-        height: 4px;
-        z-index: 30;
-        transform: rotateZ(90deg);
-      }
-      div:nth-child(2):before {
-        content: ' ';
-        position: absolute;
-        top: 50px;
-        right: -51px;
-        background-color: @stepsline;
-        width: 103px;
-        height: 4px;
-        z-index: 30;
-        transform: rotateZ(90deg);
-      }
-    }*/
     left: 348px + 174px;
     top: 70px;
     z-index: 20;
-    @media screen and (max-width: 695px) {
-      top: 377px;
-      left: 16px;
+    @media screen and (min-width: 696px) and (max-width: @tablet) {
+      left: 348px + 90px - 87px;
+      top: 70px;
     }
-    @media screen and (min-width: 695px) and (max-width: @tablet) {
-      left: 352px;
-      top: 69px;
-    }
-    @media screen and (min-width: @tablet)  and (max-width: @largetablet)  {
+    @media screen and (min-width: @tablet) and (max-width: 831px) {
       left: 348px + 174px - 87px;
       top: 70px + 53px;
     }
-    /*@media screen and (max-width: 553px) {
-      left: 180px + 20px;
-      top: 215px;
-      z-index: 20;
-    }*/
-    /*@media screen and (min-width: 801px) {*/
+    @media screen and (max-width: 695px) {
+      top: 367px;
+      left: -8px;
+    }
+    @media screen and (max-width: 520px) {
+      top: 423px;
+      left: -16px;
+    }
     i:last-child {
       top: 200px;
       left: 110px;
@@ -399,11 +375,9 @@ export default {
       }
     }
     div:first-child:after {
-      @media screen and (min-width: 696px) {
-        top: 302px / 9 + 3px;
-        left: -11px;
-      }
-      @media screen and (max-width: @largetablet)  {
+      top: 302px / 9 + 3px;
+      left: -11px;
+      @media screen and (max-width: 831px)  {
         left: 80px;
         top: 10px;
         width: 55px;
@@ -428,7 +402,7 @@ export default {
         left: 60px;
       }
       .stepimg4 {
-        @media screen and (max-width: @largetablet)  {
+        @media screen and (max-width: 831px)  {
           left: 70px;
           top: -70px;
         }
@@ -454,7 +428,6 @@ export default {
       left: -10px;
     }
     div:last-child:before {
-
       top: 302px / 9  + 4px;
       right: -10px;
       background-color: @stepsline;
@@ -472,6 +445,9 @@ export default {
     z-index:1;
     background-image: url('../assets/images/steps.jpg');
     .hexogonimage(white, 262px, 302px);
+    @media screen and (max-width: 520px) {
+      display: none;
+    }
     @media screen and (max-width: 695px) {
       top: 90px;
       left: 17px;
@@ -490,11 +466,6 @@ export default {
         display: none;
       }
     }
-    /*@media screen and (max-width: 553px) {
-      left: -20px + 20px;
-      top: 40px;
-    }*/
   }
-  /*}*/
 }
 </style>

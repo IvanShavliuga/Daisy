@@ -1,5 +1,5 @@
 <template>
-<div>
+<main>
   <Header/>
   <Receive/>
   <Expand/>
@@ -11,7 +11,7 @@
   <Team/>
   <Clients/>
   <Footer/>
-</div>
+</main>
 </template>
 <style>
 </style>

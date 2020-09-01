@@ -1,32 +1,35 @@
-@import './mixins.less';
-@import './vars.less';
 @import '../fonts/GothamPro/stylesheet.css';
 @import '../fonts/pfont/stylesheet.css';
+@import './vars.less';
+@import './mixins.less';
 
-body {
+body, html {
   margin: 0;
   padding: 0;
-  //border-right: 2px dotted purple;
+  width: 100vw;
+  @media screen and (max-width: 710px) {
+    width: 102vw;
+    overflow-x: hidden;
+  }
 }
-html {
+
+section, main {
   margin: 0;
   padding: 0;
+  width: 100vw;
+  @media screen and (max-width: 710px) {
+    width: 102vw;
+    overflow-x: hidden;
+  }
 }
-.background {
-  background-color: #000;
-}
-section {
-  border-right: 2px solid red;
-  width: 100%;
+
+#app {
+  margin: 0;
+  padding: 0;
 }
 .wrapper {
   width: 85%;
   padding: 0;
   margin: 0 auto;
   height: inherit;
-  border:2px dotted blue;
-  @media screen and (max-width: @tablet) {
-    width: 80%;
-    margin: 0 auto;
-  }
 }

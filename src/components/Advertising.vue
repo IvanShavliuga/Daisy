@@ -3,9 +3,9 @@
     <div class="wrapper">
       <div class="advertising__block">
         <div class="advertising__images">
-          <picture>
-            <source media="(max-width: 740px)" srcset="../assets/images/macbook2_mobile.png">
-            <img class="advertising__images-macbook" alt="advertising macbook" src="../assets/images/macbook2.png"/>
+          <picture class="advertising__images-picture" >
+            <source srcset="../assets/images/macbook2_mobile.png 740w"/>
+            <img alt="advertising macbook" src="../assets/images/macbook2.png"/>
           </picture>
         </div>
         <div class="advertising__text">
@@ -29,7 +29,6 @@ export default {
 </script>
 <style lang="less">
 .advertising {
-  width: 100%;
   margin: 0;
   padding-top: 10px;
   padding-bottom: 40px;

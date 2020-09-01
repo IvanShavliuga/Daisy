@@ -74,7 +74,7 @@ export default {
   }
   &__block {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 40px;
     @media screen and (max-width: @largetablet) {
       margin-left: 20px;
@@ -85,10 +85,14 @@ export default {
       align-items: center;
       flex-wrap: wrap;
     }
+    @media screen and (max-width: @phone) {
+      margin-left: -40px;
+    }
     &-item {
       position: relative;
       list-style: none;
       width: 230px;
+      margin-right: 10px;
       @media screen and (max-width: @tablet) {
         margin-bottom: 20px;
       }

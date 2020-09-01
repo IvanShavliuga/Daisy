@@ -29,7 +29,6 @@
 </template>
 <style lang="less">
 .footer {
-  width: 100%;
   height: 338px + 208px;
   padding-top: 150px;
   &__map {

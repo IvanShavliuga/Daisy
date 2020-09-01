@@ -83,15 +83,25 @@ export default {
   }
   &__slider {
     width: 600px;
-    position: absolute;
-    left: 49%;
-    top: 90%;
-    transform: translate(-49%, -90%);
-    @media screen and (max-width: @largetablet)  {
+    margin: 60px auto;
+    /*@media screen and (max-width: @largetablet)  {
       left: 50%;
       top: 90%;
       transform: translate(-50%, -90%);
-    }/*
+    }*/
+    @media screen and (max-width: 740px)  {
+      /*left: 50%;
+      top: 95%;*/
+      width: 500px;
+      /*transform: translate(-50%, -95%);*/
+    }
+    @media screen and (max-width: 740px)  {
+      width: 350px;
+    }
+    @media screen and (max-width: @phone) {
+      width: auto;
+    }
+    /*
     @media screen and (max-width: 811px)  {
       margin: 40px 5% 20px 5%;
     }
@@ -162,6 +172,12 @@ export default {
       color: @bodycolor;
       font-weight: 500;
       font-family: @bodyfont;
+      @media screen and (max-width: 749px)  {
+        width: 300px;
+      }
+      @media screen and (max-width: @phone) {
+        width: auto;
+      }
     }
     &-title {
       font-size: 28px;
@@ -171,16 +187,25 @@ export default {
       margin-bottom: 10px;
       margin-top: 10px;
       font-family: @bodyfont;
+      @media screen and (max-width: 749px)  {
+        width: 300px;
+        text-align: center;
+      }
     }
     &-firstname {
       color: @itemactive;
     }
     &-prof {
       margin-top: 10px;
+      @media screen and (max-width: 749px)  {
+        width: 300px;
+        text-align: center;
+      }
     }
     &-nav {
       text-align: center;
       margin-top: 50px;
+      podition: relative;
     }
     &-prev {
       .navbutton();
