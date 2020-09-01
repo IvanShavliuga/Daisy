@@ -14,8 +14,7 @@
         </div>
         <div class="marketing__images">
           <picture>
-            <source media="(max-width: 560px)" srcset="../assets/images/marketing_m1.png">
-            <source media="(max-width: 740px)" srcset="../assets/images/marketing_m.png">
+            <source media="(max-width: 740px)" srcset="../assets/images/marketing_m.png 740w, ../assets/images/marketing_m1.png 560w"/>
             <img class="marketing__images-marketing" alt="marketing" src="../assets/images/marketing.png"/>
           </picture>
         </div>
@@ -48,11 +47,18 @@ export default {
   }
   &__images {
     width: 40%;
+    img {
+      margin-left: -150px;
+      @media screen and (max-width: 1111px) {
+        margin-left: -100px;
+      }
+      @media screen and (max-width: 890px) {
+        margin-left: 0;
+      }
+    }
     @media screen and (max-width: @largetablet) {
       width: 100%;
       text-align: center;
-    }
-    &-marketing {
     }
   }
 }

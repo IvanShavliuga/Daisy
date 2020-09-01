@@ -18,11 +18,11 @@
             <li class="header__topline-item">contact</li>
           </ul>
         </nav>
-        <div class="header__topline-burger" @click="showmenu=!showmenu">
+        <!--<div class="header__topline-burger" @click="showmenu=!showmenu">
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </div>-->
       </div>
       <div class="header__block">
         <h1 class="header__block-title">
@@ -54,7 +54,6 @@ export default {
 </script>
 <style scoped lang="less">
 .header {
-  width: 100%;
   height: 849px;
   margin: 0;
   background-image: url('../assets/images/header.jpg');
@@ -107,7 +106,7 @@ export default {
       line-height: 36px;
       font-family: @bodyfont;
       @media screen and (max-width: @tablet) {
-        margin: 0 25px 5px 0;
+        margin: 0 15px 5px -5px;
       }
     }
     .active {
@@ -134,7 +133,7 @@ export default {
         @media screen and (max-width: @largetablet) {
           width: 50px;
         }
-        @media screen and (max-width: @tablet) {
+        @media screen and (max-width: 901px) {
           display: none;
         }
       }

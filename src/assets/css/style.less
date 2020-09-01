@@ -1,34 +1,31 @@
-@import './mixins.less';
-@import './vars.less';
 @import '../fonts/GothamPro/stylesheet.css';
 @import '../fonts/pfont/stylesheet.css';
+@import './vars.less';
+@import './mixins.less';
 
-body {
-  margin: 0;
-  padding: 0 auto;
-  width: initial;
-}
-html {
+body, html {
   margin: 0;
   padding: 0;
+  width: 100vw;
+  @media screen and (max-width: 710px) {
+    width: 102vw;
+    overflow-x: hidden;
+  }
 }
-.background {
-  background-color: #000;
-}
-section {
-  margin: 1px;
-  padding: 1px;
-  width: 100%;
-}
-.container {
+
+section, main {
   margin: 0;
   padding: 0;
-  border: 1px dotted #df67df;
+  width: 100vw;
+  @media screen and (max-width: 710px) {
+    width: 102vw;
+    overflow-x: hidden;
+  }
 }
-main, #app{
-  margin: 1px;
-  padding: 1px;
-  width: 100%;
+
+#app {
+  margin: 0;
+  padding: 0;
 }
 .wrapper {
   width: 85%;
@@ -36,12 +33,4 @@ main, #app{
   margin: 0 auto;
   height: inherit;
   border:2px dotted blue;
-  @media screen and (max-width: @tablet) {
-    width: 80%;
-    margin: 0 auto;
-  }
-  @media screen and (max-width: 520px) {
-    width: 100%;
-    margin: 0;
-  }
 }

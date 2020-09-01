@@ -20,7 +20,7 @@
   background-image: url('../assets/images/expand.jpg');
   background-repeat: no-repeat;
   background-size: 100% 99.9%;
-  padding: 80px 20px;
+  padding: 80px 0;
   @media screen and (max-width: @largetablet) {
     height: 350px;
     padding: 80px 0;

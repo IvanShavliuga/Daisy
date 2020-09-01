@@ -52,6 +52,15 @@ export default {
   &__images {
     width: 40%;
     position: relative;
+    img {
+      margin-left: -150px;
+      @media screen and (max-width: 1111px) {
+        margin-left: -100px;
+      }
+      @media screen and (max-width: 890px) {
+        margin-left: 0;
+      }
+    }
     @media screen and (max-width: @largetablet) {
       width: 100%;
       text-align: center;
