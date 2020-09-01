@@ -98,6 +98,9 @@ export default {
     @media screen and (max-width: 740px)  {
       width: 350px;
     }
+    @media screen and (max-width: @phone) {
+      width: auto;
+    }
     /*
     @media screen and (max-width: 811px)  {
       margin: 40px 5% 20px 5%;
@@ -171,6 +174,9 @@ export default {
       font-family: @bodyfont;
       @media screen and (max-width: 749px)  {
         width: 300px;
+      }
+      @media screen and (max-width: @phone) {
+        width: auto;
       }
     }
     &-title {

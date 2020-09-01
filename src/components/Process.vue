@@ -115,6 +115,14 @@ export default {
       transform: scale(0.8);
       margin: 110px 0 10px -10px;
     }
+    @media screen and (max-width: 399px) {
+      transform: scale(0.7);
+      margin: 110px 0 -10px -20px;
+    }
+    @media screen and (max-width: 275px) {
+      transform: scale(0.65);
+      margin: 110px 0 -10px -40px;
+    }
     &-img {
       position: absolute;
       top: -15px;

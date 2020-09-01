@@ -105,6 +105,9 @@ export default {
         padding-left: -20px;
         padding-right: 10px;
       }
+      @media screen and (max-width: @phone) {
+        width: auto;
+      }
       &:after {
         content: '/';
         color: @bodycolor;
@@ -143,6 +146,9 @@ export default {
     @media screen and (max-width: 749px)  {
       width: 80%;
     }
+    @media screen and (max-width: @phone) {
+      width: auto;
+    }
     &-item {
       list-style: none;
       position: relative;
@@ -180,6 +186,9 @@ export default {
             width: 250px;
             height: 250px;
           }
+          @media screen and (max-width: @phone) {
+            width: 100%;
+          }
         }
       }
       &:first-child, &nth-child(4) {
@@ -207,6 +216,9 @@ export default {
         @media screen and (max-width: 612px) {
           width: 250px;
           height: 250px;
+        }
+        @media screen and (max-width: @phone) {
+          width: 100%;
         }
       }
     }
@@ -263,6 +275,15 @@ export default {
     font-weight: 300;
     font-family: @bodyfont;
     margin: 30px  40% 15px 40%;
+    @media screen and (max-width: 508px) {
+      margin: 30px  10% 15px 10%;
+    }
+    @media screen and (max-width: 270px) {
+      margin: 30px  10% 15px 10%;
+      width: 167px;
+      height: 44px;
+      font-size: 16px;
+    }
   }
 }
 </style>

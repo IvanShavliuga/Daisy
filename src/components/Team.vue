@@ -85,6 +85,9 @@ export default {
       align-items: center;
       flex-wrap: wrap;
     }
+    @media screen and (max-width: @phone) {
+      margin-left: -40px;
+    }
     &-item {
       position: relative;
       list-style: none;

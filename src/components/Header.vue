@@ -78,6 +78,14 @@ export default {
       @media screen and (max-width: @tablet) {
         justify-content: center;
       }
+      @media screen and (max-width: 277px) {
+        flex-wrap: wrap;
+      }
+    }
+    &-brand {
+      @media screen and (max-width: 277px) {
+        margin-top: 40px;
+      }
     }
     &-menu {
       flex-grow: 1;

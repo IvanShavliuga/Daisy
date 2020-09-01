@@ -60,6 +60,10 @@ export default {
       @media screen and (max-width: 890px) {
         margin-left: 0;
       }
+      @media screen and (max-width: 400px) {
+        transform: scale(0.6);
+        margin-left: -40px;
+      }
     }
     @media screen and (max-width: @largetablet) {
       width: 100%;
